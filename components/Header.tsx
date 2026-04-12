@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 export default function Header() {
@@ -13,32 +14,20 @@ export default function Header() {
 
   return (
     <>
-      {/* Top Bar (Dark Navy matching neurocare) */}
-      <div className="bg-[#2b2e4a] text-white py-2 px-6 text-xs sm:text-sm">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-end items-center gap-4 md:gap-6 font-medium">
-          <Link href="/verwijzers/" className="hover:text-cyan-400 transition-colors">
-            Doorverwijzen
-          </Link>
-          <span className="hidden sm:inline text-slate-500">|</span>
-          <Link href="/professionele-opleiding/" className="hover:text-cyan-400 transition-colors">
-            Professionele Opleiding
-          </Link>
-          <div className="flex items-center gap-1 cursor-pointer hover:text-cyan-400 transition-colors">
-            <span className="w-4 h-4 rounded-full overflow-hidden inline-block bg-red-500"></span>
-            NL
-            <svg className="w-3 h-3 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
-          </div>
-        </div>
-      </div>
-
       {/* Main Header */}
       <header className="w-full bg-white border-b border-slate-100 sticky top-0 z-40 transition-shadow duration-300">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 z-50">
-            <div className="w-8 h-8 rounded-full bg-[#33C5F3] flex items-center justify-center text-white font-bold text-xl">
-              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+            <div className="w-8 h-8 relative shrink-0">
+              <Image 
+                src="/logortmsbehandeling.png" 
+                alt="rTMS Behandeling Logo" 
+                fill 
+                className="object-contain"
+                priority
+              />
             </div>
             <span className="font-bold text-xl text-slate-800 tracking-tight">rtms <span className="text-slate-400 font-normal">behandeling</span></span>
           </Link>

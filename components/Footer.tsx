@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -9,8 +10,13 @@ export default function Footer() {
           {/* Kolom 1: Logo + korte beschrijving */}
           <div className="col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-6 text-white hover:text-[#33C5F3] transition-colors">
-              <div className="w-8 h-8 rounded-full bg-[#33C5F3] flex items-center justify-center text-white">
-                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+              <div className="w-8 h-8 relative shrink-0">
+                <Image 
+                  src="/logortmsbehandeling.png" 
+                  alt="rTMS Behandeling Logo" 
+                  fill 
+                  className="object-contain"
+                />
               </div>
               <span className="font-bold text-2xl tracking-tight">rtms <span className="font-normal text-slate-400">behandeling</span></span>
             </Link>
