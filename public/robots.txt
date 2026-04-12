@@ -1,0 +1,11 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /wp-admin/
+Disallow: /aanmelden/bedankt/
+
+# Host
+Host: https://rtms-behandeling.nl
+
+# Sitemaps
+Sitemap: https://rtms-behandeling.nl/sitemap.xml
