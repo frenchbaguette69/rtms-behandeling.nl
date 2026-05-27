@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock, FaChevronRight, FaParking, FaShieldAlt, FaMapMarkedAlt } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock, FaChevronRight, FaParking, FaShieldAlt, FaMapMarkedAlt, FaWhatsapp } from 'react-icons/fa';
 
 export const metadata: Metadata = {
   title: 'Onze rTMS Kliniek Locaties | Heiloo & Schiphol-Rijk | rtms-behandeling.nl',
@@ -130,11 +130,15 @@ export default function LocatiesPage() {
                     </li>
                     <li className="flex items-center gap-4 text-slate-700 font-medium">
                       <FaPhoneAlt className="text-[#33C5F3] shrink-0 text-lg" />
-                      <span>088 - 0000000 (Placeholder)</span>
+                      <span>085-0604388</span>
+                    </li>
+                    <li className="flex items-center gap-4 text-slate-700 font-medium">
+                      <FaWhatsapp className="text-[#25D366] shrink-0 text-lg" />
+                      <span>WhatsApp: 085-0604388</span>
                     </li>
                     <li className="flex items-center gap-4 text-slate-700 font-medium">
                       <FaEnvelope className="text-[#33C5F3] shrink-0 text-lg" />
-                      <span>heiloo@rtms-behandeling.nl</span>
+                      <span>info@rtms-behandeling.nl</span>
                     </li>
                   </ul>
                   <div className="mt-auto">
@@ -171,11 +175,15 @@ export default function LocatiesPage() {
                     </li>
                     <li className="flex items-center gap-4 text-slate-700 font-medium">
                       <FaPhoneAlt className="text-[#33C5F3] shrink-0 text-lg" />
-                      <span>088 - 0000000 (Placeholder)</span>
+                      <span>085-0604388</span>
+                    </li>
+                    <li className="flex items-center gap-4 text-slate-700 font-medium">
+                      <FaWhatsapp className="text-[#25D366] shrink-0 text-lg" />
+                      <span>WhatsApp: 085-0604388</span>
                     </li>
                     <li className="flex items-center gap-4 text-slate-700 font-medium">
                       <FaEnvelope className="text-[#33C5F3] shrink-0 text-lg" />
-                      <span>schiphol@rtms-behandeling.nl</span>
+                      <span>info@rtms-behandeling.nl</span>
                     </li>
                   </ul>
                   <div className="mt-auto">

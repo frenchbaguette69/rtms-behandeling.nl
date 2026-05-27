@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaClock, FaExclamationTriangle, FaChevronRight, FaHandshake, FaCheckCircle } from 'react-icons/fa';
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaClock, FaExclamationTriangle, FaChevronRight, FaHandshake, FaCheckCircle, FaWhatsapp } from 'react-icons/fa';
 
 export const metadata: Metadata = {
   title: 'Contact | rTMS Kliniek Heiloo & Schiphol-Rijk | rtms-behandeling.nl',
@@ -53,7 +53,7 @@ const contactSchema = [
     "mainEntity": {
       "@type": "MedicalClinic",
       "name": "rTMS Behandeling Nederland",
-      "telephone": "088-0000000",
+      "telephone": "085-0604388",
       "email": "info@rtms-behandeling.nl",
       "address": [
         {
@@ -222,11 +222,15 @@ export default function ContactPage() {
                 </p>
                 <p className="flex items-center gap-4 text-slate-600">
                   <FaPhoneAlt className="text-[#33C5F3] shrink-0" />
-                  <a href="tel:0880000000" className="hover:text-[#33C5F3]">088 - 000 00 00</a>
+                  <a href="tel:0850604388" className="hover:text-[#33C5F3]">085-0604388</a>
+                </p>
+                <p className="flex items-center gap-4 text-slate-600">
+                  <FaWhatsapp className="text-[#25D366] shrink-0" />
+                  <a href="https://wa.me/31850604388" target="_blank" rel="noopener noreferrer" className="hover:text-[#25D366]">WhatsApp: 085-0604388</a>
                 </p>
                 <p className="flex items-center gap-4 text-slate-600">
                   <FaEnvelope className="text-[#33C5F3] shrink-0" />
-                  <a href="mailto:heiloo@rtms-behandeling.nl" className="hover:text-[#33C5F3]">heiloo@rtms-behandeling.nl</a>
+                  <a href="mailto:info@rtms-behandeling.nl" className="hover:text-[#33C5F3]">info@rtms-behandeling.nl</a>
                 </p>
                 <p className="flex items-start gap-4 text-slate-600 pt-2 border-t border-slate-100">
                   <FaClock className="text-[#33C5F3] mt-1 shrink-0" />
@@ -254,11 +258,15 @@ export default function ContactPage() {
                 </p>
                 <p className="flex items-center gap-4 text-slate-600">
                   <FaPhoneAlt className="text-[#33C5F3] shrink-0" />
-                  <a href="tel:0880000000" className="hover:text-[#33C5F3]">088 - 000 00 00</a>
+                  <a href="tel:0850604388" className="hover:text-[#33C5F3]">085-0604388</a>
+                </p>
+                <p className="flex items-center gap-4 text-slate-600">
+                  <FaWhatsapp className="text-[#25D366] shrink-0" />
+                  <a href="https://wa.me/31850604388" target="_blank" rel="noopener noreferrer" className="hover:text-[#25D366]">WhatsApp: 085-0604388</a>
                 </p>
                 <p className="flex items-center gap-4 text-slate-600">
                   <FaEnvelope className="text-[#33C5F3] shrink-0" />
-                  <a href="mailto:schiphol@rtms-behandeling.nl" className="hover:text-[#33C5F3]">schiphol@rtms-behandeling.nl</a>
+                  <a href="mailto:info@rtms-behandeling.nl" className="hover:text-[#33C5F3]">info@rtms-behandeling.nl</a>
                 </p>
                 <p className="flex items-start gap-4 text-slate-600 pt-2 border-t border-slate-100">
                   <FaClock className="text-[#33C5F3] mt-1 shrink-0" />

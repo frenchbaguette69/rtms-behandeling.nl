@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { FaMapMarkerAlt, FaCar, FaTrain, FaParking, FaPhoneAlt, FaEnvelope, FaClock, FaChevronRight } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaCar, FaTrain, FaParking, FaPhoneAlt, FaEnvelope, FaClock, FaChevronRight, FaWhatsapp } from 'react-icons/fa';
 
 export const metadata: Metadata = {
   title: 'rTMS Kliniek Schiphol-Rijk | Boeing Avenue 8 | rtms-behandeling.nl',
@@ -35,7 +35,7 @@ const schipholSchema = [
     "logo": "https://rtms-behandeling.nl/images/logo.png",
     "image": "https://rtms-behandeling.nl/images/og-schiphol.png",
     "description": "Gespecialiseerde rTMS-kliniek bij Schiphol voor behandeling van depressie, angst, OCD en PTSS.",
-    "telephone": "088-0000000",
+    "telephone": "085-0604388",
     "email": "info@rtms-behandeling.nl",
     "address": {
       "@type": "PostalAddress",
@@ -148,8 +148,9 @@ export default function LocatieSchiphol() {
                  <h3 className="font-bold text-xl mb-4 text-[#2b2e4a]">Contactgegevens Schiphol-Rijk</h3>
                  <ul className="space-y-4">
                    <li className="flex items-center gap-4 text-slate-600"><FaMapMarkerAlt className="text-[#33C5F3] text-xl shrink-0" /> Boeing Avenue 8<br/>1119 PB Schiphol-Rijk</li>
-                   <li className="flex items-center gap-4 text-slate-600"><FaPhoneAlt className="text-[#33C5F3] text-xl shrink-0" /> 088 - XXX XX XX</li>
-                   <li className="flex items-center gap-4 text-slate-600"><FaEnvelope className="text-[#33C5F3] text-xl shrink-0" /> schiphol@rtms-behandeling.nl</li>
+                   <li className="flex items-center gap-4 text-slate-600"><FaPhoneAlt className="text-[#33C5F3] text-xl shrink-0" /> <a href="tel:0850604388" className="hover:text-[#33C5F3]">085-0604388</a></li>
+                   <li className="flex items-center gap-4 text-slate-600"><FaWhatsapp className="text-[#25D366] text-xl shrink-0" /> <a href="https://wa.me/31850604388" target="_blank" rel="noopener noreferrer" className="hover:text-[#25D366]">WhatsApp: 085-0604388</a></li>
+                   <li className="flex items-center gap-4 text-slate-600"><FaEnvelope className="text-[#33C5F3] text-xl shrink-0" /> <a href="mailto:info@rtms-behandeling.nl" className="hover:text-[#33C5F3]">info@rtms-behandeling.nl</a></li>
                  </ul>
               </div>
             </div>
