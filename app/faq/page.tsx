@@ -246,8 +246,8 @@ export default function FAQPage() {
                 <Link href="/contact" className="px-8 py-4 bg-[#33C5F3] text-white font-bold rounded-full hover:bg-[#2b2e4a] transition-colors">
                   Stel uw vraag
                 </Link>
-                <Link href="tel:0880000000" className="px-8 py-4 border-2 border-[#33C5F3] text-[#33C5F3] font-bold rounded-full hover:bg-slate-50 transition-colors flex items-center justify-center gap-2">
-                  <FaPhoneAlt size={16} /> 088 - 000 00 00
+                <Link href="tel:0850604388" className="px-8 py-4 border-2 border-[#33C5F3] text-[#33C5F3] font-bold rounded-full hover:bg-slate-50 transition-colors flex items-center justify-center gap-2">
+                  <FaPhoneAlt size={16} /> 085-0604388
                 </Link>
               </div>
             </div>

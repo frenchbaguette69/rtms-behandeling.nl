@@ -240,7 +240,7 @@ export default function VoorVerwijzers() {
                <p className="text-slate-300 text-sm mb-6">Twijfelt u over een indicatie, of wilt u even sparren met een van onze psychiaters over een complexe casus voordat u formal doorverwijst?</p>
                <div className="mt-auto w-full text-left bg-white/5 p-4 rounded border border-white/10">
                   <p className="font-bold text-[#33C5F3]">Verwijzerslijn (Direct):</p>
-                  <p className="text-lg">088 - XXX XX XX</p>
+                  <p className="text-lg">085-0604388</p>
                   <p className="text-sm text-slate-400 mt-1">Bereikbaar tijdens kantooruren</p>
                </div>
             </div>

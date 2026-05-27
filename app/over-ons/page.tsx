@@ -56,7 +56,7 @@ const consolidatedOverOnsSchema = [
       {
         "@type": "MedicalClinic",
         "name": "rTMS Kliniek Heiloo",
-        "telephone": "088-0000000",
+        "telephone": "085-0604388",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Kennemerstraatweg 464",
@@ -68,7 +68,7 @@ const consolidatedOverOnsSchema = [
       {
         "@type": "MedicalClinic",
         "name": "rTMS Kliniek Schiphol-Rijk",
-        "telephone": "088-0000000",
+        "telephone": "085-0604388",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Boeing Avenue 8",
