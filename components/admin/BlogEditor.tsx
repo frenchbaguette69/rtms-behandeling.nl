@@ -42,11 +42,7 @@ export default function BlogEditor({ initial }: Props) {
   }
 
   function slugify(val: string) {
-    return val
-      .toLowerCase()
-      .replace(/[^a-z0-9\s-]/g, "")
-      .replace(/\s+/g, "-")
-      .replace(/-+/g, "-");
+    return val.toLowerCase().replace(/[^a-z0-9\s-]/g, "").replace(/\s+/g, "-").replace(/-+/g, "-");
   }
 
   async function uploadFeatured(file: File) {
@@ -84,12 +80,12 @@ export default function BlogEditor({ initial }: Props) {
 
   return (
     <div className="grid grid-cols-1 xl:grid-cols-[1fr_320px] gap-8 items-start">
-      {/* Left column — main content */}
-      <div className="space-y-6">
+      {/* Left — main content */}
+      <div className="space-y-5">
         <div>
-          <label className="label">Titel</label>
+          <label className="admin-label">Titel</label>
           <input
-            className="input"
+            className="admin-input"
             placeholder="Blogpost titel"
             value={form.title}
             onChange={(e) => {
@@ -101,11 +97,11 @@ export default function BlogEditor({ initial }: Props) {
         </div>
 
         <div>
-          <label className="label">URL slug</label>
-          <div className="flex items-center bg-white/5 border border-white/10 rounded-xl overflow-hidden focus-within:border-[#33C5F3]/50">
-            <span className="px-4 text-white/30 text-sm border-r border-white/10 py-3">/blog/</span>
+          <label className="admin-label">URL slug</label>
+          <div className="flex items-center bg-white border border-gray-200 rounded-xl overflow-hidden focus-within:border-[#33C5F3] focus-within:ring-1 focus-within:ring-[#33C5F3]/20 transition">
+            <span className="px-4 text-gray-400 text-sm border-r border-gray-200 py-3">/blog/</span>
             <input
-              className="flex-1 bg-transparent px-4 py-3 text-white text-sm focus:outline-none"
+              className="flex-1 bg-transparent px-4 py-3 text-gray-900 text-sm focus:outline-none"
               value={form.slug}
               onChange={(e) => set("slug", slugify(e.target.value))}
               placeholder="mijn-blog-post"
@@ -114,9 +110,9 @@ export default function BlogEditor({ initial }: Props) {
         </div>
 
         <div>
-          <label className="label">Samenvatting / Excerpt</label>
+          <label className="admin-label">Samenvatting / Excerpt</label>
           <textarea
-            className="input min-h-[80px] resize-y"
+            className="admin-input min-h-[80px] resize-y"
             placeholder="Korte samenvatting van het blog..."
             value={form.excerpt}
             onChange={(e) => set("excerpt", e.target.value)}
@@ -124,22 +120,19 @@ export default function BlogEditor({ initial }: Props) {
         </div>
 
         <div>
-          <label className="label">Inhoud</label>
-          <RichTextEditor
-            value={form.content}
-            onChange={(html) => set("content", html)}
-          />
+          <label className="admin-label">Inhoud</label>
+          <RichTextEditor value={form.content} onChange={(html) => set("content", html)} />
         </div>
       </div>
 
-      {/* Right column — meta & settings */}
+      {/* Right — meta & settings */}
       <div className="space-y-5">
         {/* Publish card */}
-        <div className="bg-white/[0.04] border border-white/10 rounded-2xl p-5">
-          <h3 className="text-white font-medium mb-4">Publiceren</h3>
+        <div className="bg-white border border-gray-200 rounded-2xl p-5 shadow-sm">
+          <h3 className="text-gray-900 font-medium mb-4">Publiceren</h3>
           <div className="flex items-center justify-between mb-5">
-            <span className="text-white/60 text-sm">Status</span>
-            <span className={`text-xs font-medium px-2.5 py-1 rounded-full ${form.published ? "bg-green-500/15 text-green-400" : "bg-yellow-500/15 text-yellow-400"}`}>
+            <span className="text-gray-500 text-sm">Status</span>
+            <span className={`text-xs font-medium px-2.5 py-1 rounded-full ${form.published ? "bg-green-100 text-green-700" : "bg-yellow-100 text-yellow-700"}`}>
               {form.published ? "Gepubliceerd" : "Concept"}
             </span>
           </div>
@@ -156,7 +149,7 @@ export default function BlogEditor({ initial }: Props) {
               type="button"
               onClick={() => handleSave()}
               disabled={saving}
-              className="w-full bg-white/5 hover:bg-white/10 disabled:opacity-50 text-white/70 font-medium py-2.5 rounded-xl text-sm transition-colors"
+              className="w-full bg-gray-100 hover:bg-gray-200 disabled:opacity-50 text-gray-700 font-medium py-2.5 rounded-xl text-sm transition-colors"
             >
               {saving ? "..." : "Opslaan"}
             </button>
@@ -164,17 +157,17 @@ export default function BlogEditor({ initial }: Props) {
         </div>
 
         {/* Featured image */}
-        <div className="bg-white/[0.04] border border-white/10 rounded-2xl p-5">
-          <h3 className="text-white font-medium mb-4">Uitgelichte afbeelding</h3>
+        <div className="bg-white border border-gray-200 rounded-2xl p-5 shadow-sm">
+          <h3 className="text-gray-900 font-medium mb-4">Uitgelichte afbeelding</h3>
           {form.featuredImage ? (
             <div className="space-y-3">
-              <div className="relative aspect-video rounded-xl overflow-hidden bg-white/5">
+              <div className="relative aspect-video rounded-xl overflow-hidden bg-gray-100">
                 <Image src={form.featuredImage} alt="Featured" fill className="object-cover" />
               </div>
               <button
                 type="button"
                 onClick={() => set("featuredImage", undefined)}
-                className="text-red-400/70 hover:text-red-400 text-xs transition-colors"
+                className="text-red-400 hover:text-red-600 text-xs transition-colors"
               >
                 Verwijder afbeelding
               </button>
@@ -184,7 +177,7 @@ export default function BlogEditor({ initial }: Props) {
               type="button"
               onClick={() => featuredRef.current?.click()}
               disabled={uploadingImg}
-              className="w-full border-2 border-dashed border-white/10 hover:border-[#33C5F3]/30 rounded-xl py-8 text-white/30 hover:text-white/50 text-sm transition-colors"
+              className="w-full border-2 border-dashed border-gray-200 hover:border-[#33C5F3]/40 rounded-xl py-8 text-gray-400 hover:text-gray-600 text-sm transition-colors"
             >
               {uploadingImg ? "Uploaden..." : "+ Afbeelding uploaden"}
             </button>
@@ -203,69 +196,40 @@ export default function BlogEditor({ initial }: Props) {
         </div>
 
         {/* Category & reading time */}
-        <div className="bg-white/[0.04] border border-white/10 rounded-2xl p-5 space-y-4">
-          <h3 className="text-white font-medium">Details</h3>
+        <div className="bg-white border border-gray-200 rounded-2xl p-5 shadow-sm space-y-4">
+          <h3 className="text-gray-900 font-medium">Details</h3>
           <div>
-            <label className="label">Categorie</label>
-            <select
-              className="input"
-              value={form.category}
-              onChange={(e) => set("category", e.target.value as BlogFormData["category"])}
-            >
+            <label className="admin-label">Categorie</label>
+            <select className="admin-input" value={form.category} onChange={(e) => set("category", e.target.value as BlogFormData["category"])}>
               {CATEGORIES.map((c) => <option key={c} value={c}>{c}</option>)}
             </select>
           </div>
           <div>
-            <label className="label">Datum</label>
-            <input
-              className="input"
-              placeholder="1 januari 2026"
-              value={form.date}
-              onChange={(e) => set("date", e.target.value)}
-            />
+            <label className="admin-label">Datum</label>
+            <input className="admin-input" placeholder="1 januari 2026" value={form.date} onChange={(e) => set("date", e.target.value)} />
           </div>
           <div>
-            <label className="label">Leestijd</label>
-            <input
-              className="input"
-              placeholder="5 min"
-              value={form.readingTime}
-              onChange={(e) => set("readingTime", e.target.value)}
-            />
+            <label className="admin-label">Leestijd</label>
+            <input className="admin-input" placeholder="5 min" value={form.readingTime} onChange={(e) => set("readingTime", e.target.value)} />
           </div>
         </div>
 
         {/* SEO */}
-        <div className="bg-white/[0.04] border border-white/10 rounded-2xl p-5 space-y-4">
-          <h3 className="text-white font-medium">SEO</h3>
+        <div className="bg-white border border-gray-200 rounded-2xl p-5 shadow-sm space-y-4">
+          <h3 className="text-gray-900 font-medium">SEO</h3>
           <div>
-            <label className="label">Meta titel</label>
-            <input
-              className="input"
-              placeholder="SEO paginatitel"
-              value={form.metaTitle}
-              onChange={(e) => set("metaTitle", e.target.value)}
-            />
-            <p className="text-white/25 text-xs mt-1">{form.metaTitle.length}/60 tekens</p>
+            <label className="admin-label">Meta titel</label>
+            <input className="admin-input" placeholder="SEO paginatitel" value={form.metaTitle} onChange={(e) => set("metaTitle", e.target.value)} />
+            <p className="text-gray-300 text-xs mt-1">{form.metaTitle.length}/60 tekens</p>
           </div>
           <div>
-            <label className="label">Meta omschrijving</label>
-            <textarea
-              className="input min-h-[80px] resize-none"
-              placeholder="Meta description voor zoekmachines..."
-              value={form.metaDescription}
-              onChange={(e) => set("metaDescription", e.target.value)}
-            />
-            <p className="text-white/25 text-xs mt-1">{form.metaDescription.length}/160 tekens</p>
+            <label className="admin-label">Meta omschrijving</label>
+            <textarea className="admin-input min-h-[80px] resize-none" placeholder="Meta description..." value={form.metaDescription} onChange={(e) => set("metaDescription", e.target.value)} />
+            <p className="text-gray-300 text-xs mt-1">{form.metaDescription.length}/160 tekens</p>
           </div>
           <div>
-            <label className="label">Focus keyword</label>
-            <input
-              className="input"
-              placeholder="Hoofd zoekwoord"
-              value={form.focusKeyword}
-              onChange={(e) => set("focusKeyword", e.target.value)}
-            />
+            <label className="admin-label">Focus keyword</label>
+            <input className="admin-input" placeholder="Hoofd zoekwoord" value={form.focusKeyword} onChange={(e) => set("focusKeyword", e.target.value)} />
           </div>
         </div>
       </div>

@@ -18,8 +18,8 @@ export default async function AdminBlogsPage() {
         <div className="max-w-5xl">
           <div className="flex items-center justify-between mb-8">
             <div>
-              <h1 className="text-2xl font-semibold text-white">Blogs</h1>
-              <p className="text-white/40 text-sm mt-1">{blogs.length} artikel{blogs.length !== 1 ? "en" : ""}</p>
+              <h1 className="text-2xl font-semibold text-gray-900">Blogs</h1>
+              <p className="text-gray-400 text-sm mt-1">{blogs.length} artikel{blogs.length !== 1 ? "en" : ""}</p>
             </div>
             <Link
               href="/admin/blogs/nieuw"

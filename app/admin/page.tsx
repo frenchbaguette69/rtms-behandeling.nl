@@ -18,8 +18,8 @@ export default async function AdminDashboard() {
       <main className="flex-1 p-8 lg:p-10">
         <div className="max-w-5xl">
           <div className="mb-8">
-            <h1 className="text-2xl font-semibold text-white">Dashboard</h1>
-            <p className="text-white/40 text-sm mt-1">Welkom terug, {session.user?.name ?? session.user?.email}</p>
+            <h1 className="text-2xl font-semibold text-gray-900">Dashboard</h1>
+            <p className="text-gray-400 text-sm mt-1">Welkom terug, {session.user?.name ?? session.user?.email}</p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
@@ -29,7 +29,7 @@ export default async function AdminDashboard() {
           </div>
 
           <div className="flex items-center justify-between mb-4">
-            <h2 className="text-lg font-medium text-white">Recente blogs</h2>
+            <h2 className="text-lg font-medium text-gray-900">Recente blogs</h2>
             <Link
               href="/admin/blogs/nieuw"
               className="bg-[#33C5F3] hover:bg-[#1aaedc] text-white text-sm font-medium px-4 py-2 rounded-xl transition-colors"
@@ -43,19 +43,19 @@ export default async function AdminDashboard() {
               <Link
                 key={blog.id}
                 href={`/admin/blogs/${blog.id}`}
-                className="flex items-center justify-between bg-white/[0.04] hover:bg-white/[0.07] border border-white/10 rounded-xl px-5 py-4 transition group"
+                className="flex items-center justify-between bg-white hover:bg-gray-50 border border-gray-200 rounded-xl px-5 py-4 transition group shadow-sm"
               >
                 <div>
-                  <p className="text-white font-medium group-hover:text-[#33C5F3] transition-colors">{blog.title}</p>
-                  <p className="text-white/40 text-xs mt-0.5">{blog.date} · {blog.category}</p>
+                  <p className="text-gray-900 font-medium group-hover:text-[#33C5F3] transition-colors">{blog.title}</p>
+                  <p className="text-gray-400 text-xs mt-0.5">{blog.date} · {blog.category}</p>
                 </div>
-                <span className={`text-xs font-medium px-2.5 py-1 rounded-full ${blog.published ? "bg-green-500/15 text-green-400" : "bg-yellow-500/15 text-yellow-400"}`}>
+                <span className={`text-xs font-medium px-2.5 py-1 rounded-full ${blog.published ? "bg-green-100 text-green-700" : "bg-yellow-100 text-yellow-700"}`}>
                   {blog.published ? "Gepubliceerd" : "Concept"}
                 </span>
               </Link>
             ))}
             {blogs.length === 0 && (
-              <div className="text-center py-12 text-white/30 border border-white/5 rounded-xl">
+              <div className="text-center py-12 text-gray-400 border border-gray-200 rounded-xl bg-white">
                 Nog geen blogs. Maak je eerste blog aan.
               </div>
             )}
@@ -68,10 +68,10 @@ export default async function AdminDashboard() {
 
 function StatCard({ label, value, icon }: { label: string; value: number; icon: string }) {
   return (
-    <div className="bg-white/[0.04] border border-white/10 rounded-2xl p-6">
+    <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
       <div className="text-2xl mb-2">{icon}</div>
-      <div className="text-3xl font-bold text-white">{value}</div>
-      <div className="text-white/40 text-sm mt-1">{label}</div>
+      <div className="text-3xl font-bold text-gray-900">{value}</div>
+      <div className="text-gray-400 text-sm mt-1">{label}</div>
     </div>
   );
 }

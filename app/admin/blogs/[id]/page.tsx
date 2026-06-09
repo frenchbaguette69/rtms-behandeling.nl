@@ -19,11 +19,11 @@ export default async function EditBlogPage({ params }: { params: Promise<{ id: s
       <main className="flex-1 p-8 lg:p-10 overflow-auto">
         <div className="max-w-6xl">
           <div className="flex items-center gap-3 mb-8">
-            <Link href="/admin/blogs" className="text-white/30 hover:text-white transition-colors text-sm">
+            <Link href="/admin/blogs" className="text-gray-400 hover:text-gray-700 transition-colors text-sm">
               ← Blogs
             </Link>
-            <span className="text-white/20">/</span>
-            <h1 className="text-xl font-semibold text-white line-clamp-1">{blog.title}</h1>
+            <span className="text-gray-300">/</span>
+            <h1 className="text-xl font-semibold text-gray-900 line-clamp-1">{blog.title}</h1>
           </div>
           <BlogEditor initial={blog} />
         </div>
