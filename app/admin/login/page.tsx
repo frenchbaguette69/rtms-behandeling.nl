@@ -15,11 +15,7 @@ export default function AdminLoginPage() {
     e.preventDefault();
     setLoading(true);
     setError("");
-    const result = await signIn("credentials", {
-      email,
-      password,
-      redirect: false,
-    });
+    const result = await signIn("credentials", { email, password, redirect: false });
     setLoading(false);
     if (result?.error) {
       setError("Ongeldig e-mailadres of wachtwoord");
@@ -29,7 +25,7 @@ export default function AdminLoginPage() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#0f1117] to-[#1a1d2e] px-4">
+    <div className="min-h-screen flex items-center justify-center bg-gray-50 px-4">
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-[#33C5F3]/10 border border-[#33C5F3]/20 mb-4">
@@ -37,39 +33,39 @@ export default function AdminLoginPage() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
             </svg>
           </div>
-          <h1 className="text-2xl font-semibold text-white">Admin Login</h1>
-          <p className="text-sm text-white/40 mt-1">rTMS Behandeling — Beheer</p>
+          <h1 className="text-2xl font-semibold text-gray-900">Admin Login</h1>
+          <p className="text-sm text-gray-400 mt-1">rTMS Behandeling — Beheer</p>
         </div>
 
-        <form onSubmit={handleSubmit} className="bg-white/[0.04] border border-white/10 rounded-2xl p-8 space-y-5 backdrop-blur">
+        <form onSubmit={handleSubmit} className="bg-white border border-gray-200 rounded-2xl p-8 space-y-5 shadow-sm">
           {error && (
-            <div className="bg-red-500/10 border border-red-500/20 text-red-400 text-sm px-4 py-3 rounded-xl">
+            <div className="bg-red-50 border border-red-200 text-red-600 text-sm px-4 py-3 rounded-xl">
               {error}
             </div>
           )}
 
           <div>
-            <label className="block text-sm font-medium text-white/60 mb-2">E-mailadres</label>
+            <label className="block text-sm font-medium text-gray-600 mb-2">E-mailadres</label>
             <input
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
               autoComplete="email"
-              className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/20 focus:outline-none focus:border-[#33C5F3]/50 focus:ring-1 focus:ring-[#33C5F3]/30 transition"
+              className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-900 placeholder-gray-300 focus:outline-none focus:border-[#33C5F3] focus:ring-1 focus:ring-[#33C5F3]/30 transition"
               placeholder="admin@neo-clinics.nl"
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-white/60 mb-2">Wachtwoord</label>
+            <label className="block text-sm font-medium text-gray-600 mb-2">Wachtwoord</label>
             <input
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
               autoComplete="current-password"
-              className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/20 focus:outline-none focus:border-[#33C5F3]/50 focus:ring-1 focus:ring-[#33C5F3]/30 transition"
+              className="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-gray-900 placeholder-gray-300 focus:outline-none focus:border-[#33C5F3] focus:ring-1 focus:ring-[#33C5F3]/30 transition"
               placeholder="••••••••"
             />
           </div>
