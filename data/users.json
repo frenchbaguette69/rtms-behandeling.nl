@@ -1,0 +1,9 @@
+[
+  {
+    "id": "8bf16fdb-11cc-4d24-989e-9c1c49390e75",
+    "name": "Admin",
+    "email": "admin@neo-clinics.nl",
+    "passwordHash": "$2b$12$S6NhygPyAJCqwyUf0DB85.Ago06w9N.BjTtHPATjWptEGfQSs6U7y",
+    "role": "admin"
+  }
+]
