@@ -16,7 +16,7 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
-            cd /opt/rtms-behandeling
+            cd /opt/rtms-behandeling.nl
             git pull
             docker compose down
             docker compose up -d --build
