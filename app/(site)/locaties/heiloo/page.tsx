@@ -220,54 +220,27 @@ export default function LocatieHeiloo() {
               <h2 className="text-3xl font-bold text-slate-900 mb-6">Ons team in Heiloo</h2>
               <div className="w-16 h-1 bg-[#33C5F3] mb-12"></div>
               
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                 
-                 {/* Team Member 1 */}
+              <div className="grid md:grid-cols-2 gap-6 max-w-2xl">
+
+                 <div className="bg-slate-50 border border-slate-200 rounded overflow-hidden shadow-sm hover:border-[#33C5F3] transition-colors group">
+                    <div className="h-48 bg-[#2b2e4a] w-full flex items-center justify-center relative overflow-hidden">
+                       <div className="absolute inset-0 bg-slate-200 bg-[url('https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=400&auto=format&fit=crop')] bg-cover bg-center mix-blend-luminosity opacity-80 group-hover:mix-blend-normal transition-all duration-500"></div>
+                    </div>
+                    <div className="p-6">
+                      <h3 className="font-bold text-[#2b2e4a] text-lg mb-1">Jan-Jaap Mol</h3>
+                      <p className="text-[#33C5F3] font-medium text-sm mb-4">Psychiater</p>
+                      <p className="text-slate-600 text-sm">Eindverantwoordelijk voor het medisch beleid. Specialist in neuromodulatie en rTMS.</p>
+                    </div>
+                 </div>
+
                  <div className="bg-slate-50 border border-slate-200 rounded overflow-hidden shadow-sm hover:border-[#33C5F3] transition-colors group">
                     <div className="h-48 bg-[#2b2e4a] w-full flex items-center justify-center relative overflow-hidden">
                        <div className="absolute inset-0 bg-slate-200 bg-[url('https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=400&auto=format&fit=crop')] bg-cover bg-center mix-blend-luminosity opacity-80 group-hover:mix-blend-normal transition-all duration-500"></div>
                     </div>
                     <div className="p-6">
-                      <h3 className="font-bold text-[#2b2e4a] text-lg mb-1">Dr. S. van Vliet</h3>
-                      <p className="text-[#33C5F3] font-medium text-sm mb-4">Regiebehandelaar / Psychiater</p>
-                      <p className="text-slate-600 text-sm">Hoofdverantwoordelijke voor intake en indicatiestelling. Specialist in neuromodulatie.</p>
-                    </div>
-                 </div>
-
-                 {/* Team Member 2 */}
-                 <div className="bg-slate-50 border border-slate-200 rounded overflow-hidden shadow-sm hover:border-[#33C5F3] transition-colors group">
-                    <div className="h-48 bg-[#2b2e4a] w-full flex items-center justify-center relative overflow-hidden">
-                       <div className="absolute inset-0 bg-slate-200 bg-[url('https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=400&auto=format&fit=crop')] bg-cover bg-center mix-blend-luminosity opacity-80 group-hover:mix-blend-normal transition-all duration-500"></div>
-                    </div>
-                    <div className="p-6">
-                      <h3 className="font-bold text-[#2b2e4a] text-lg mb-1">M. de Boer, MSc.</h3>
-                      <p className="text-[#33C5F3] font-medium text-sm mb-4">GZ-Psycholoog / rTMS-Expert</p>
-                      <p className="text-slate-600 text-sm">Begeleidt patiënten tijdens het traject, combineert CGT protocollen met de stimulatiesessies.</p>
-                    </div>
-                 </div>
-
-                 {/* Team Member 3 */}
-                 <div className="bg-slate-50 border border-slate-200 rounded overflow-hidden shadow-sm hover:border-[#33C5F3] transition-colors group">
-                    <div className="h-48 bg-[#2b2e4a] w-full flex items-center justify-center relative overflow-hidden">
-                       <div className="absolute inset-0 bg-slate-200 bg-[url('https://images.unsplash.com/photo-1594824432258-2904a434c44a?q=80&w=400&auto=format&fit=crop')] bg-cover bg-center mix-blend-luminosity opacity-80 group-hover:mix-blend-normal transition-all duration-500"></div>
-                    </div>
-                    <div className="p-6">
-                      <h3 className="font-bold text-[#2b2e4a] text-lg mb-1">L. Jansen</h3>
-                      <p className="text-[#33C5F3] font-medium text-sm mb-4">rTMS-Technicus</p>
-                      <p className="text-slate-600 text-sm">Gespecialiseerd verpleegkundige die zorgt voor de uiterste precisie bij coil-plaatsing.</p>
-                    </div>
-                 </div>
-
-                 {/* Team Member 4 */}
-                 <div className="bg-slate-50 border border-slate-200 rounded overflow-hidden shadow-sm hover:border-[#33C5F3] transition-colors group">
-                    <div className="h-48 bg-[#2b2e4a] w-full flex items-center justify-center relative overflow-hidden">
-                       <div className="absolute inset-0 bg-[#33C5F3] mix-blend-multiply opacity-20 group-hover:opacity-10 transition-all duration-500"></div>
-                       <FaPhoneAlt className="text-5xl text-[#2b2e4a] opacity-50 relative z-10" />
-                    </div>
-                    <div className="p-6 flex flex-col justify-center h-full">
-                      <h3 className="font-bold text-[#2b2e4a] text-lg mb-2">Patiëntencoördinatie</h3>
-                      <p className="text-slate-600 text-sm mb-4">Voor al uw vragen over planning, vergoedingen en aanmeldingen staat ons team voor u klaar.</p>
-                      <Link href="/contact" className="text-[#33C5F3] font-bold text-sm hover:underline">Neem contact op &rarr;</Link>
+                      <h3 className="font-bold text-[#2b2e4a] text-lg mb-1">Guido Smutzer</h3>
+                      <p className="text-[#33C5F3] font-medium text-sm mb-4">Psycholoog</p>
+                      <p className="text-slate-600 text-sm">Begeleidt patiënten tijdens het traject en zorgt voor persoonlijke, afgestemde zorg.</p>
                     </div>
                  </div>
 

@@ -81,7 +81,7 @@ export default async function BlogPostPage({ params }: BlogPostProps) {
                <div className="w-12 h-12 bg-[#2b2e4a] rounded-full flex items-center justify-center text-white"><FaUserMd size={24} /></div>
                <div className="text-sm">
                   <p className="font-bold text-[#2b2e4a]">Redactie rTMS Kliniek</p>
-                  <p className="text-slate-400">Geverifieerd door Dr. S. van Vliet</p>
+                  <p className="text-slate-400">Geverifieerd door Jan-Jaap Mol, Psychiater</p>
                </div>
             </div>
 
