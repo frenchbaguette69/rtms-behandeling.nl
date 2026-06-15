@@ -1,30 +1,9 @@
-import { Metadata } from 'next';
-import Link from 'next/link';
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaClock, FaExclamationTriangle, FaChevronRight, FaHandshake, FaCheckCircle, FaWhatsapp } from 'react-icons/fa';
+'use client';
 
-export const metadata: Metadata = {
-  title: 'Contact | rTMS Kliniek Heiloo & Schiphol-Rijk | rtms-behandeling.nl',
-  description: 'Neem contact op met onze rTMS-kliniek in Heiloo of Schiphol-Rijk. Bel, mail of vul het contactformulier in. Wij reageren binnen 1 werkdag.',
-  alternates: {
-    canonical: 'https://rtms-behandeling.nl/contact/',
-  },
-  openGraph: {
-    title: 'Contact met rTMS Behandeling Nederland',
-    description: 'Vragen over rTMS of direct een afspraak maken? Onze klinieken in Heiloo en Schiphol-Rijk staan voor u klaar.',
-    url: 'https://rtms-behandeling.nl/contact/',
-    siteName: 'rTMS Behandeling Nederland',
-    images: [
-      {
-        url: '/images/og-contact.png',
-        width: 1200,
-        height: 630,
-        alt: 'Contact met rTMS kliniek',
-      },
-    ],
-    locale: 'nl_NL',
-    type: 'website',
-  },
-};
+import Link from 'next/link';
+import { useState } from 'react';
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaClock, FaExclamationTriangle, FaChevronRight, FaHandshake, FaWhatsapp } from 'react-icons/fa';
+
 
 const contactSchema = [
   {
@@ -76,6 +55,30 @@ const contactSchema = [
 ];
 
 export default function ContactPage() {
+  const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
+  const [form, setForm] = useState({ name: '', email: '', phone: '', location: '', message: '', consent: false });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const target = e.target;
+    const value = target.type === 'checkbox' ? (target as HTMLInputElement).checked : target.value;
+    setForm(prev => ({ ...prev, [target.id]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus('sending');
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+      setStatus(res.ok ? 'sent' : 'error');
+    } catch {
+      setStatus('error');
+    }
+  };
+
   return (
     <>
       <script
@@ -111,16 +114,24 @@ export default function ContactPage() {
               Vul onderstaand formulier in en wij nemen zo spoedig mogelijk contact met u op.
             </p>
             
-            <form className="space-y-6">
+            {status === 'sent' ? (
+              <div className="bg-green-50 border border-green-200 rounded-xl p-8 text-center">
+                <p className="text-green-800 font-bold text-xl mb-2">Bericht verstuurd!</p>
+                <p className="text-green-700">Bedankt voor uw bericht. Wij nemen zo spoedig mogelijk contact met u op.</p>
+              </div>
+            ) : (
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-bold text-slate-700 mb-2" htmlFor="name">
                     Volledige naam *
                   </label>
-                  <input 
-                    type="text" 
-                    id="name" 
-                    required 
+                  <input
+                    type="text"
+                    id="name"
+                    required
+                    value={form.name}
+                    onChange={handleChange}
                     className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#33C5F3] focus:ring-1 focus:ring-[#33C5F3] outline-none transition"
                     placeholder="Uw naam"
                   />
@@ -129,10 +140,12 @@ export default function ContactPage() {
                   <label className="block text-sm font-bold text-slate-700 mb-2" htmlFor="email">
                     E-mailadres *
                   </label>
-                  <input 
-                    type="email" 
-                    id="email" 
-                    required 
+                  <input
+                    type="email"
+                    id="email"
+                    required
+                    value={form.email}
+                    onChange={handleChange}
                     className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#33C5F3] focus:ring-1 focus:ring-[#33C5F3] outline-none transition"
                     placeholder="uw@email.nl"
                   />
@@ -143,9 +156,11 @@ export default function ContactPage() {
                 <label className="block text-sm font-bold text-slate-700 mb-2" htmlFor="phone">
                   Telefoonnummer
                 </label>
-                <input 
-                  type="tel" 
-                  id="phone" 
+                <input
+                  type="tel"
+                  id="phone"
+                  value={form.phone}
+                  onChange={handleChange}
                   className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#33C5F3] focus:ring-1 focus:ring-[#33C5F3] outline-none transition"
                   placeholder="06 - 12345678"
                 />
@@ -155,8 +170,10 @@ export default function ContactPage() {
                 <label className="block text-sm font-bold text-slate-700 mb-2" htmlFor="location">
                   Voorkeur locatie
                 </label>
-                <select 
-                  id="location" 
+                <select
+                  id="location"
+                  value={form.location}
+                  onChange={handleChange}
                   className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#33C5F3] focus:ring-1 focus:ring-[#33C5F3] outline-none transition bg-white"
                 >
                   <option value="">Maak een keuze...</option>
@@ -170,20 +187,24 @@ export default function ContactPage() {
                 <label className="block text-sm font-bold text-slate-700 mb-2" htmlFor="message">
                   Uw bericht *
                 </label>
-                <textarea 
-                  id="message" 
-                  required 
+                <textarea
+                  id="message"
+                  required
                   rows={5}
+                  value={form.message}
+                  onChange={handleChange}
                   className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-[#33C5F3] focus:ring-1 focus:ring-[#33C5F3] outline-none transition"
                   placeholder="Hoe kunnen wij u helpen?"
                 ></textarea>
               </div>
 
               <div className="flex items-start gap-3">
-                <input 
-                  type="checkbox" 
-                  id="consent" 
-                  required 
+                <input
+                  type="checkbox"
+                  id="consent"
+                  required
+                  checked={form.consent}
+                  onChange={handleChange}
                   className="mt-1 w-5 h-5 rounded border-slate-300 text-[#33C5F3] focus:ring-[#33C5F3]"
                 />
                 <label htmlFor="consent" className="text-sm text-slate-600">
@@ -191,13 +212,19 @@ export default function ContactPage() {
                 </label>
               </div>
 
-              <button 
-                type="submit" 
-                className="w-full py-4 bg-[#33C5F3] text-white font-bold rounded-xl hover:bg-[#2b2e4a] transition shadow-lg shadow-cyan-100"
+              {status === 'error' && (
+                <p className="text-red-600 text-sm">Er ging iets mis. Probeer het opnieuw of mail ons direct.</p>
+              )}
+
+              <button
+                type="submit"
+                disabled={status === 'sending'}
+                className="w-full py-4 bg-[#33C5F3] text-white font-bold rounded-xl hover:bg-[#2b2e4a] transition shadow-lg shadow-cyan-100 disabled:opacity-60"
               >
-                Bericht Versturen
+                {status === 'sending' ? 'Bezig met versturen...' : 'Bericht Versturen'}
               </button>
             </form>
+            )}
           </div>
 
           {/* Info Column */}

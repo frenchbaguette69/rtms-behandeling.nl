@@ -107,31 +107,31 @@ export default function OverOns() {
           </div>
         </section>
 
-        {/* 2. Onze missie / 3. Waarom wij gekozen hebben voor rTMS */}
+        {/* 2. Waarom wij dit doen */}
         <section className="py-24 bg-white border-b border-slate-100">
           <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-start">
-            
+
             <div>
               <div className="w-12 h-12 bg-slate-50 rounded-full flex items-center justify-center text-[#33C5F3] mb-6 shadow-sm text-xl"><FaHeartbeat /></div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">Onze missie</h2>
+              <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">Waarom wij dit doen</h2>
               <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
               <p className="text-lg text-slate-600 leading-relaxed mb-6">
-                De geestelijke gezondheidszorg (GGZ) in Nederland behoort tot de beste ter wereld, toch sluiten standaardprotocollen niet aan bij iedereen. Patiënten die niet reageren op traditionele gesprekstherapie of kampen met de zware bijwerkingen van antidepressiva, dreigen vaak buiten de boot te vallen.
+                Veel mensen met een depressie, angststoornis of burn-out hebben al jaren gesprekstherapie en medicatie achter de rug, zonder dat het écht beter gaat. Of ze stoppen met medicatie vanwege de bijwerkingen. Wij zien dagelijks hoe vastlopend en uitputtend dat is.
               </p>
               <p className="text-lg text-slate-600 leading-relaxed font-medium">
-                Onze missie is om voor deze specifieke groep een brug te slaan. Wij brengen de meest geavanceerde, bewezen vorm van neuromodulatie (rTMS) uit het academische ziekenhuis, rechtstreeks naar patiëntvriendelijke, lokaal toegankelijke privéklinieken.
+                Wij zijn er voor mensen die al veel geprobeerd hebben en nog niet de verlichting hebben gevonden waar ze naar op zoek zijn. Met rTMS-therapie bieden wij een nieuwe weg, dichtbij huis, in een omgeving waar je je op je gemak voelt.
               </p>
             </div>
 
-            <div className="bg-slate-50 p-10 border-l-[6px] border-[#33C5F3] relative object-cover h-full">
+            <div className="bg-slate-50 p-10 border-l-[6px] border-[#33C5F3] relative overflow-hidden">
                <div className="absolute top-0 right-0 p-6 text-slate-200"><FaMicroscope className="text-8xl" /></div>
-               <div className="relative z-10 block">
-                 <h2 className="text-3xl font-bold text-slate-900 mb-6">Waarom specifiek rTMS?</h2>
+               <div className="relative z-10">
+                 <h2 className="text-3xl font-bold text-slate-900 mb-6">Waarom rTMS</h2>
                  <p className="text-slate-600 leading-relaxed mb-6">
-                   Onze oprichters—psychiaters en neuroloog-onderzoekers—zagen jarenlang patiënten lijden onder <em>therapieresistentie</em>. Pillen vliegen met hagel door het hele lichaam; magneetstimulatie schiet met scherp in de hersenschors. 
+                   Onze oprichters zijn psychiaters en onderzoekers die jarenlang zagen hoe mensen vastliepen in hun behandeling. Medicatie werkt door het hele lichaam en geeft vaak vervelende bijwerkingen, zoals gewichtstoename of je &ldquo;vlak&rdquo; voelen.
                  </p>
                  <p className="text-slate-600 leading-relaxed mb-6">
-                   Wij kozen voor rTMS omdat het de enige behandeling in de psychiatrie is die netwerken fysiek versterkt zonder systemische bijwerkingen zoals gewichtstoename of emotionele afvlakking.
+                   rTMS werkt heel gericht: met een magneetspoel stimuleren we precies het gebied in de hersenen dat minder actief is bij bijvoorbeeld een depressie. Geen pillen, geen ingreep, geen narcose. Je zit comfortabel in een stoel, terwijl de behandeling zijn werk doet.
                  </p>
                </div>
             </div>
@@ -139,76 +139,62 @@ export default function OverOns() {
           </div>
         </section>
 
-        {/* 4. Onze aanpak: wetenschap + menselijkheid */}
+        {/* 3. Onze aanpak */}
         <section className="py-24 bg-slate-50 border-b border-slate-100">
-           <div className="max-w-4xl mx-auto px-6 text-center">
-            
-            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">Onze aanpak: Wetenschap + Menselijkheid</h2>
+           <div className="max-w-4xl mx-auto px-6">
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6 text-center">Onze aanpak</h2>
             <div className="w-20 h-1 bg-[#33C5F3] mx-auto mb-10"></div>
-            
-            <p className="text-lg text-slate-600 leading-relaxed mb-6">
-              De technologie achter neuromodulatie is koud, wiskundig en uiterst precieus. Het succes van het traject hangt echter evengoed af van de warmte en het vertrouwen tijdens uw bezoeken. Wij weigeren afstandelijk te zijn.
-            </p>
 
-            <div className="grid md:grid-cols-2 gap-8 mt-12 text-left">
+            <div className="grid md:grid-cols-2 gap-8">
                <div className="bg-white p-8 rounded shadow-sm border border-slate-200">
-                  <h3 className="font-bold text-[#2b2e4a] text-xl mb-4">De Wetenschap</h3>
+                  <h3 className="font-bold text-[#2b2e4a] text-xl mb-4">Persoonlijke instelling</h3>
                   <ul className="space-y-4">
                      <li className="flex items-start gap-4">
                         <FaCheckCircle className="text-[#33C5F3] mt-1 shrink-0" />
-                        <span className="text-slate-600">Wij kalibreren de machine uitsluitend op basis van uw persoonlijke Motor Threshold. Geen giswerk.</span>
-                     </li>
-                     <li className="flex items-start gap-4">
-                        <FaCheckCircle className="text-[#33C5F3] mt-1 shrink-0" />
-                        <span className="text-slate-600">Wij conformeren ons strikt aan de (internationale) FDA clearings en Nederlandse Trimbos richtlijnen.</span>
+                        <span className="text-slate-600">Bij je eerste bezoek nemen we de tijd om te kijken wat voor jou de juiste, veilige instelling is. Niemand is hetzelfde, dus we beginnen nooit met een standaardinstelling — we kijken samen met jou wat werkt.</span>
                      </li>
                   </ul>
                </div>
 
                <div className="bg-white p-8 rounded shadow-sm border border-slate-200">
-                  <h3 className="font-bold text-[#2b2e4a] text-xl mb-4">De Menselijkheid</h3>
+                  <h3 className="font-bold text-[#2b2e4a] text-xl mb-4">Persoonlijke begeleiding</h3>
                   <ul className="space-y-4">
                      <li className="flex items-start gap-4">
                         <FaCheckCircle className="text-[#33C5F3] mt-1 shrink-0" />
-                        <span className="text-slate-600">Terwijl de puls zijn werk doet, luisteren wij. Onze behandelaren zijn opgeleid in de GGZ, niet alleen in de techniek.</span>
-                     </li>
-                     <li className="flex items-start gap-4">
-                        <FaCheckCircle className="text-[#33C5F3] mt-1 shrink-0" />
-                        <span className="text-slate-600">Een warme kop thee, privacy in uw wachtkamer en een direct aanspreekpunt voor uw familie.</span>
+                        <span className="text-slate-600">Tijdens je sessies zit er altijd iemand naast je die met je meekijkt, een praatje maakt en gewoon vraagt hoe het met je gaat. Een kopje koffie of thee, een rustige wachtruimte, en een vast gezicht dat je leert kennen.</span>
                      </li>
                   </ul>
                </div>
             </div>
-
            </div>
         </section>
 
-        {/* 5. Kwaliteit en certificering / BIG Registratie */}
+        {/* 4. Ons team */}
         <section className="py-24 bg-[#2b2e4a] text-white">
           <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
-            
+
             <div className="space-y-8">
-               <h2 className="text-3xl lg:text-4xl font-bold mb-6">Kwaliteit en certificering</h2>
+               <h2 className="text-3xl lg:text-4xl font-bold mb-6">Ons team</h2>
                <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
-              
+
                <div>
-                  <h3 className="text-xl font-bold flex items-center gap-3 mb-3"><FaUserMd className="text-[#33C5F3]" /> BIG-geregistreerde behandelaren</h3>
+                  <h3 className="text-xl font-bold flex items-center gap-3 mb-3"><FaUserMd className="text-[#33C5F3]" /> BIG-geregistreerde zorgverleners</h3>
                   <p className="text-slate-300 leading-relaxed">
-                     Net als in academische ziekenhuizen wordt ons medisch beleid bewaakt door de psychiater (Wet BIG artikel 14). Daarbij staan al onze (GZ) psychologen en regiebehandelaren geregistreerd in het overheids BIG-register. U bent te allen tijde onder behandeling van medisch tuchtrechtelijk bevoegd personeel.
+                     Bij ons word je behandeld door ervaren, BIG-geregistreerde zorgverleners. Het medisch beleid staat onder verantwoordelijkheid van een psychiater, en alle behandelaren zijn aangesloten bij het landelijke kwaliteitskader voor de GGZ.
                   </p>
                </div>
 
                <div>
-                  <h3 className="text-xl font-bold flex items-center gap-3 mb-3"><FaCertificate className="text-[#33C5F3]" /> Kwaliteitsstandaarden</h3>
+                  <h3 className="text-xl font-bold flex items-center gap-3 mb-3"><FaCertificate className="text-[#33C5F3]" /> In goede handen</h3>
                   <p className="text-slate-300 leading-relaxed">
-                     Onze klinieken opereren onder de strenge kwaliteitskaders van het Kwaliteitsstatuut in de GGZ. We hanteren de ROM-metingen (Routine Outcome Monitoring) om de lijdensdruk objectief te verminderen. Tevens investeren we continue in de nieuwste apparatuur (CE-gemarkeerd) voor de magneetspoelen.
+                     In de praktijk betekent dit vooral: je bent in goede handen, bij mensen die hun vak serieus nemen én tijd voor je hebben.
                   </p>
                </div>
             </div>
 
             <div className="bg-white/5 border border-white/10 p-10 rounded text-center">
                <FaCertificate className="text-[100px] text-white/20 mx-auto mb-6" />
-               <p className="text-2xl font-medium text-white italic">"Veiligheid, transparantie, en medisch-ethische perfectie vormen het fundament van elke puls die wij toedienen."</p>
+               <p className="text-2xl font-medium text-white italic">&ldquo;Veiligheid, transparantie, en menselijkheid vormen het fundament van elke behandeling die wij bieden.&rdquo;</p>
             </div>
 
           </div>
