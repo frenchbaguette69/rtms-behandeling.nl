@@ -331,7 +331,7 @@ export default function Homepage() {
                 </div>
                 <h3 className="text-3xl font-bold text-slate-900 mb-4">Locatie Heiloo</h3>
                 <div className="text-slate-600 mb-8 space-y-3 flex-1 text-lg">
-                  <p className="flex items-center gap-3"><span className="text-xl text-[#33C5F3]">📍</span> Kennemerstraatweg XXX, Heiloo</p>
+                  <p className="flex items-center gap-3"><span className="text-xl text-[#33C5F3]">📍</span> Kennemerstraatweg 464 unit 1.03, 1851 NG Heiloo</p>
                   <p className="flex items-center gap-3"><span className="text-xl text-[#33C5F3]">🚗</span> Gratis parkeren voor de deur</p>
                 </div>
                 <Link href="/locaties/heiloo/" className="text-[#33C5F3] font-bold tracking-wide hover:text-[#29a5cd] transition-colors inline-block uppercase text-sm">
@@ -348,7 +348,7 @@ export default function Homepage() {
                 </div>
                 <h3 className="text-3xl font-bold text-slate-900 mb-4">Locatie Schiphol-Rijk</h3>
                 <div className="text-slate-600 mb-8 space-y-3 flex-1 text-lg">
-                  <p className="flex items-center gap-3"><span className="text-xl text-[#33C5F3]">📍</span> Boeingavenue XXX, Schiphol-Rijk</p>
+                  <p className="flex items-center gap-3"><span className="text-xl text-[#33C5F3]">📍</span> Boeing Avenue 8, 1119 PB Schiphol-Rijk</p>
                   <p className="flex items-center gap-3"><span className="text-xl text-[#33C5F3]">✈️</span> Centraal naast de A4</p>
                 </div>
                 <Link href="/locaties/schiphol-rijk/" className="text-[#33C5F3] font-bold tracking-wide hover:text-[#29a5cd] transition-colors inline-block uppercase text-sm">
@@ -438,12 +438,15 @@ export default function Homepage() {
               </Link>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
-              {[1, 2, 3, 4].map((i) => (
+            <div className="grid grid-cols-2 md:grid-cols-2 gap-12 max-w-2xl mx-auto">
+              {[
+                { name: 'Jan-Jaap Mol', title: 'Psychiater', image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=400&auto=format&fit=crop' },
+                { name: 'Guido Smutzer', title: 'Psycholoog', image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=400&auto=format&fit=crop' },
+              ].map((member, i) => (
                 <div key={i} className="text-center">
-                  <div className="w-full aspect-[3/4] bg-slate-200 mb-6 filter grayscale hover:grayscale-0 transition-all duration-500"></div>
-                  <h4 className="font-bold text-slate-900 text-xl mb-1">Specialist Naam</h4>
-                  <p className="text-[#33C5F3] font-medium">Functietitel</p>
+                  <div className="w-full aspect-[3/4] bg-slate-200 mb-6 filter grayscale hover:grayscale-0 transition-all duration-500 bg-cover bg-center" style={{ backgroundImage: `url(${member.image})` }}></div>
+                  <h4 className="font-bold text-slate-900 text-xl mb-1">{member.name}</h4>
+                  <p className="text-[#33C5F3] font-medium">{member.title}</p>
                 </div>
               ))}
             </div>
