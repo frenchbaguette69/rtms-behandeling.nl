@@ -444,7 +444,7 @@ export default function Homepage() {
                 { name: 'Guido Smutzer', title: 'Psycholoog', image: '/guidomedewerker.webp' },
               ].map((member, i) => (
                 <div key={i} className="text-center">
-                  <div className="w-full aspect-[3/4] bg-slate-200 mb-6 filter grayscale hover:grayscale-0 transition-all duration-500 bg-cover bg-center" style={{ backgroundImage: `url(${member.image})` }}></div>
+                  {member.image && <div className="w-full aspect-[3/4] bg-slate-200 mb-6 filter grayscale hover:grayscale-0 transition-all duration-500 bg-cover bg-center" style={{ backgroundImage: `url(${member.image})` }}></div>}
                   <h4 className="font-bold text-slate-900 text-xl mb-1">{member.name}</h4>
                   <p className="text-[#33C5F3] font-medium">{member.title}</p>
                 </div>

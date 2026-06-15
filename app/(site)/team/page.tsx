@@ -125,11 +125,13 @@ export default function Team() {
 
              <div className="grid md:grid-cols-2 gap-8">
                 {teamMembers.map((member, idx) => (
-                    <div key={idx} className="bg-white border border-slate-200 rounded grid md:grid-cols-5 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <div key={idx} className={`bg-white border border-slate-200 rounded overflow-hidden shadow-sm hover:shadow-md transition-shadow ${member.image ? 'grid md:grid-cols-5' : ''}`}>
+                        {member.image && (
                         <div className="md:col-span-2 h-64 md:h-full bg-slate-200 relative">
                              <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${member.image})`}}></div>
                         </div>
-                        <div className="md:col-span-3 p-8 flex flex-col justify-center">
+                        )}
+                        <div className={`${member.image ? 'md:col-span-3' : ''} p-8 flex flex-col justify-center`}>
                             <h3 className="text-2xl font-bold text-[#2b2e4a] mb-1">{member.name}</h3>
                             <p className="text-[#33C5F3] font-bold mb-4">{member.role}</p>
                             <p className="text-slate-600 text-sm leading-relaxed mb-6">{member.bio}</p>
