@@ -116,7 +116,7 @@ export default function Homepage() {
       <div className="flex flex-col min-h-screen bg-white font-sans text-slate-800">
         
         {/* 1. Hero Edge-to-Edge with Trust Badges */}
-        <section className="relative w-full min-h-[600px] flex flex-col justify-center py-20 pb-32">
+        <section className="relative w-full min-h-[600px] flex flex-col justify-center py-20 pb-32 overflow-hidden">
           {/* Subtle overlay for text readability */}
           <div className="absolute inset-0 bg-[#2b2e4a] mix-blend-multiply opacity-40 z-10"></div>
           {/* Hero background image */}
