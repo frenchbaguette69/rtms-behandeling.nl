@@ -84,7 +84,7 @@ export default function VergoedingKosten() {
       <div className="flex flex-col min-h-screen bg-white font-sans text-slate-800">
         
         {/* 1. Hero */}
-        <section className="relative w-full min-h-[60vh] flex flex-col justify-center py-20 pb-24">
+        <section className="relative w-full min-h-[60vh] flex flex-col justify-center py-20 pb-24 overflow-hidden">
           <div className="absolute inset-0 bg-[#2b2e4a] mix-blend-multiply opacity-50 z-10"></div>
           <div className="absolute inset-0 bg-[url('/images/og-vergoeding.png')] bg-cover bg-center bg-no-repeat z-0 transform scale-105"></div>
           

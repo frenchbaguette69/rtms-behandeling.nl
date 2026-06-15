@@ -75,7 +75,7 @@ export default function WatIsRTMS() {
       <div className="flex flex-col min-h-screen bg-white font-sans text-slate-800">
         
         {/* Hero Section */}
-        <section className="relative w-full h-[60vh] min-h-[500px] flex flex-col justify-center">
+        <section className="relative w-full h-[60vh] min-h-[500px] flex flex-col justify-center overflow-hidden">
           <div className="absolute inset-0 bg-[#2b2e4a] mix-blend-multiply opacity-50 z-10"></div>
           <div className="absolute inset-0 bg-[url('/images/og-wat-is-rtms.png')] bg-cover bg-center bg-no-repeat z-0 transform scale-105"></div>
           
