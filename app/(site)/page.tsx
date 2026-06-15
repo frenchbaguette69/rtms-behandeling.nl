@@ -440,8 +440,8 @@ export default function Homepage() {
 
             <div className="grid grid-cols-2 md:grid-cols-2 gap-12 max-w-2xl mx-auto">
               {[
-                { name: 'Jan-Jaap Mol', title: 'Psychiater', image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=400&auto=format&fit=crop' },
-                { name: 'Guido Smutzer', title: 'Psycholoog', image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=400&auto=format&fit=crop' },
+                { name: 'Jan-Jaap Mol', title: 'Psychiater', image: '' },
+                { name: 'Guido Smutzer', title: 'Psycholoog', image: '/guidomedewerker.webp' },
               ].map((member, i) => (
                 <div key={i} className="text-center">
                   <div className="w-full aspect-[3/4] bg-slate-200 mb-6 filter grayscale hover:grayscale-0 transition-all duration-500 bg-cover bg-center" style={{ backgroundImage: `url(${member.image})` }}></div>

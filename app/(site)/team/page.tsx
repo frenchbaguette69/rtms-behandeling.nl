@@ -31,14 +31,14 @@ const teamMembers = [
     name: "Jan-Jaap Mol",
     role: "Psychiater",
     specialty: "Medisch beleid & rTMS bij Depressie",
-    image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=400&auto=format&fit=crop",
+    image: "",
     bio: "Jan-Jaap Mol is als psychiater eindverantwoordelijk voor het medisch beleid binnen onze klinieken. Met zijn achtergrond in de psychiatrie en neuromodulatie bewaakt hij de kwaliteit en veiligheid van elke behandeling."
   },
   {
     name: "Guido Smutzer",
     role: "Psycholoog",
     specialty: "Psychologische begeleiding & rTMS protocollen",
-    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=400&auto=format&fit=crop",
+    image: "/guidomedewerker.webp",
     bio: "Guido Smutzer begeleidt patiënten tijdens en rondom de rTMS-behandeling. Als psycholoog zorgt hij ervoor dat de technische behandeling aansluit bij wat iemand persoonlijk nodig heeft."
   }
 ];
