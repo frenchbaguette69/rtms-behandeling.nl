@@ -232,7 +232,7 @@ export default function LocatieHeiloo() {
 
                  <div className="bg-slate-50 border border-slate-200 rounded overflow-hidden shadow-sm hover:border-[#33C5F3] transition-colors group">
                     <div className="h-48 bg-[#2b2e4a] w-full flex items-center justify-center relative overflow-hidden">
-                       <div className="absolute inset-0 bg-slate-200 bg-[url('/guidomedewerker.webp')] bg-cover bg-center mix-blend-luminosity opacity-80 group-hover:mix-blend-normal transition-all duration-500"></div>
+                       <div className="absolute inset-0 bg-slate-200 bg-[url('/guidomedewerker.webp')] bg-cover bg-center transition-all duration-500"></div>
                     </div>
                     <div className="p-6">
                       <h3 className="font-bold text-[#2b2e4a] text-lg mb-1">Guido Smutzer</h3>
