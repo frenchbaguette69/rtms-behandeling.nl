@@ -206,212 +206,75 @@ export default function BehandelingDepressie() {
           </div>
         </section>
 
-        {/* 2. Wat is depressie en hoe beïnvloedt het de hersenen? */}
-        <section className="py-24 bg-white border-b border-slate-100">
-          <div className="max-w-4xl mx-auto px-6">
-            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">Wat is depressie en hoe beïnvloedt het de hersenen?</h2>
+        {/* Herkenning */}
+        <section className="py-20 bg-white border-b border-slate-100">
+          <div className="max-w-3xl mx-auto px-6">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Herken je dit?</h2>
             <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
-            <p className="text-lg text-slate-600 leading-relaxed mb-6">
-              Depressie is veel meer dan alleen maar 'zich somber voelen'. Het is een complexe aandoening die diep geworteld zit in de fysiologie van uw hersenen. Neurologen en psychiaters weten tegenwoordig dat bij een depressie specifieke hersengebieden—met name de <strong>prefrontale cortex</strong>—verminderde activiteit vertonen.
-            </p>
-            <p className="text-lg text-slate-600 leading-relaxed">
-              Deze netwerken zijn verantwoordelijk voor emotieregulatie, besluitvorming en motivatie. Wanneer de communicatie daar stagneert, ervaart u apathie, vermoeidheid en zwaarmoedigheid. De traditionele weg is het gebruik van stoffen (antidepressiva, zoals SSRI's of SNRI's) om neurotransmitters zoals serotonine te beïnvloeden. Dit brengt echter vaak systemische bijwerkingen met zich mee, en bij zo'n dertig procent van de patiënten slaat medicatie simpelweg niet aan.
-            </p>
+            <p className="text-lg text-slate-600 leading-relaxed">Heb je last van aanhoudende somberheid, nergens meer plezier in kunnen vinden, of een vermoeidheid die geen verklaring lijkt te hebben? Misschien lukt het je ook niet meer om gewoon dingen op te pakken die je vroeger makkelijk afging. Als die klachten blijven terugkomen of onvoldoende verbeteren met therapie of medicatie, dan kan een rTMS behandeling op maat mogelijk helpen.</p>
           </div>
         </section>
 
-        {/* 3. Hoe werkt rTMS bij depressie? */}
-        <section className="py-24 bg-slate-50">
-          <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">Hoe werkt rTMS bij depressie?</h2>
-              <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
-              
-              <h3 className="text-xl font-bold text-slate-900 mb-3 mt-10">Welk hersengebied wordt gestimuleerd?</h3>
-              <p className="text-slate-600 leading-relaxed mb-8">
-                De Repetitieve Transcraniële Magnetische Stimulatie (rTMS) richt zich middels een magnetische spoel heel precies op de dorsolaterale prefrontale cortex (DLPFC). Dit is het 'actiecentrum' van de hersenen dat bij depressie vaak 'in slaap' is gevallen.
-              </p>
-
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Hoogfrequente versus laagfrequente rTMS</h3>
-              <p className="text-slate-600 leading-relaxed mb-6">
-                We zetten meestal <strong>hoogfrequente pulsen (stimulerend)</strong> in op de linker prefrontale cortex om de activiteit en bloeddoorstroming weer 'aan' te zetten. Als alternatief of aanvulling kunnen we <strong>laagfrequente pulsen (kalmerend)</strong> inzetten op de rechter hersenhelft om overactieve angst-gerelateerde circuits te dempen. Dit resulteert in het normaliseren van uw stemming, geheel medicatievrij.
-              </p>
-              <div className="flex gap-6 mt-8">
-                <Link href="/wat-is-rtms/" className="text-sm font-bold text-[#33C5F3] hover:underline uppercase tracking-wider">
-                  Lees meer over hoe rTMS werkt →
-                </Link>
-                <Link href="/behandelproces/" className="text-sm font-bold text-[#33C5F3] hover:underline uppercase tracking-wider">
-                  Bekijk het behandelproces →
-                </Link>
-              </div>
-            </div>
-            
-            <div className="h-full min-h-[400px] bg-white border border-slate-200 shadow-sm flex flex-col justify-center items-center text-center p-6 relative">
-               <div className="w-full aspect-[4/3] bg-slate-100 flex items-center justify-center text-[#33C5F3] mb-6">
-                <FaBrain className="text-[120px]" />
-               </div>
-               <p className="text-sm text-slate-500 italic max-w-sm mx-auto">Figuur: De magnetische pulsen reiken exact diep genoeg (~3 cm) om de corticale netwerken voor stemmingsregulatie veilig te activeren.</p>
-            </div>
+        {/* Wat is rTMS */}
+        <section className="py-20 bg-slate-50 border-b border-slate-100">
+          <div className="max-w-3xl mx-auto px-6">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Wat is rTMS?</h2>
+            <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
+            <p className="text-lg text-slate-600 leading-relaxed">rTMS is een niet-invasieve behandeling waarbij zachte magnetische pulsen bepaalde gebieden in de hersenen stimuleren die betrokken zijn bij stemming en energie. Tijdens de behandeling wordt een rTMS-spoel tegen het hoofd geplaatst. De behandeling doet geen pijn en je bent gewoon bij bewustzijn. Omdat iedere situatie anders is, wordt eerst bekeken of rTMS passend kan zijn voor jouw klachten.</p>
           </div>
         </section>
 
-        {/* 4. Voor wie is rTMS bij depressie geschikt? */}
-        <section className="py-24 bg-white border-t border-slate-100">
-          <div className="max-w-7xl mx-auto px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">Voor wie is rTMS bij depressie geschikt?</h2>
-              <div className="w-20 h-1 bg-[#33C5F3] mx-auto mb-8"></div>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-12">
-              <div className="bg-slate-50 p-8 border-t-[4px] border-[#33C5F3]">
-                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-[#33C5F3] mb-6 shadow-sm text-xl"><FaChartLine /></div>
-                <h3 className="text-xl font-bold text-slate-900 mb-4">Therapieresistente depressie</h3>
-                <p className="text-slate-600 leading-relaxed">Heeft u al twee vormen van behandeling (bijv. SSRI's in combinatie met CGT) zonder succes doorlopen? Dan bent u een uitstekende kandidaat. Voor deze doelgroep met <Link href="/behandelingen/therapieresistente-depressie/" className="text-[#33C5F3] font-bold hover:underline">therapieresistente depressie</Link> wordt rTMS tevens vergoed.</p>
-              </div>
-              <div className="bg-slate-50 p-8 border-t-[4px] border-[#33C5F3]">
-                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-[#33C5F3] mb-6 shadow-sm text-xl"><FaPills /></div>
-                <h3 className="text-xl font-bold text-slate-900 mb-4">Bijwerkingen van antidepressiva</h3>
-                <p className="text-slate-600 leading-relaxed">Bieden antidepressiva verlichting, maar kunt u de zware bijwerkingen (zoals gewichtstoename, extreme vermoeidheid of seksuele disfunctie) niet langer of niet goed verdragen? rTMS biedt een alternatief met nagenoeg nul bijwerkingen.</p>
-              </div>
-              <div className="bg-slate-50 p-8 border-t-[4px] border-[#33C5F3]">
-                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-[#33C5F3] mb-6 shadow-sm text-xl"><FaBaby /></div>
-                <h3 className="text-xl font-bold text-slate-900 mb-4">Zwangerschap en medicatiewens</h3>
-                <p className="text-slate-600 leading-relaxed">Patiënten die zwanger zijn (of een sterke kinderwens hebben) willen risico's op medicatieblootstelling voor het kind voorkomen. Voor hen is medicatievrije hersenstimulatie de veiligste structurele behandelvorm.</p>
-              </div>
-            </div>
+        {/* Waarom overwegen */}
+        <section className="py-20 bg-white border-b border-slate-100">
+          <div className="max-w-3xl mx-auto px-6">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Waarom mensen rTMS overwegen</h2>
+            <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
+            <p className="text-slate-600 mb-6">Deze behandeling is voor je wanneer je:</p>
+            <ul className="space-y-4">
+              {[
+                'al een tijdje somber bent en merkt dat gesprekken of medicatie onvoldoende helpen',
+                'bijwerkingen hebt van antidepressiva die je niet meer wilt accepteren',
+                'op zoek bent naar een behandeling zonder pillen of operatie',
+                'zwanger bent of wil worden en medicatie wil vermijden',
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-3 text-slate-600">
+                  <span className="w-2 h-2 rounded-full bg-[#33C5F3] mt-2 shrink-0"></span>
+                  {item}
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
 
-        {/* 5. Hoe effectief & 6. Vergoeding info-blok */}
-        <section className="py-24 bg-[#2b2e4a] text-white">
-          <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16">
-            <div>
-              <h2 className="text-3xl lg:text-4xl font-bold mb-6">Hoe effectief is rTMS bij depressie?</h2>
-              <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
-              <p className="text-slate-300 text-lg leading-relaxed mb-6">
-                Uit analyses van o.a. academische ziekenhuizen en internationale centra, behaalt rTMS indrukwekkende resultaten bij populaties waar medicatie stukloopt. De cijfers laten zien dat <strong className="text-white">30% tot 70% van patiënten met therapieresistentie significante verlichting ervaart</strong>. Bij een deel van de patiënten verdwijnen de depressieve klachten zelfs in zijn geheel (remissie).
-              </p>
-              <p className="text-slate-400 text-sm">Bron: Landelijke richtlijnen en langetermijn onderzoeken door Amsterdam UMC (2020).</p>
-            </div>
-            
-            <div className="bg-white/5 border border-white/10 p-10 relative overflow-hidden">
-               <div className="absolute top-0 right-0 p-6 text-[#33C5F3]/30"><FaUserShield className="text-9xl" /></div>
-               <div className="relative z-10">
-                 <h2 className="text-3xl font-bold mb-6">Is rTMS bij depressie vergoed?</h2>
-                 <p className="text-slate-300 leading-relaxed text-lg mb-8">
-                   Sinds oktober 2017 zit rTMS voor therapieresistente depressie standaard in het basispakket van alle Nederlandse zorgverzekeraars. Er geldt weliswaar uw eigen risico, maar de verdere kosten vallen in de basisvoorziening GGZ, mits u een geldige medische verwijzing heeft.
-                 </p>
-                 <Link href="/vergoeding-kosten/" className="text-[#33C5F3] font-bold uppercase tracking-wider text-sm flex items-center gap-2 hover:text-white transition-colors">
-                   Alles over vergoeding bij depressie <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" /></svg>
-                 </Link>
-               </div>
-            </div>
+        {/* Wat je kunt verwachten */}
+        <section className="py-20 bg-slate-50 border-b border-slate-100">
+          <div className="max-w-3xl mx-auto px-6">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Wat je kunt verwachten</h2>
+            <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
+            <ul className="space-y-4">
+              {[
+                'Behandeling zonder medicatie',
+                'Behandelplan afgestemd op jouw situatie',
+                'Meer energie en een lichter gevoel',
+                'Betere nachtrust en meer focus',
+              ].map((item, i) => (
+                <li key={i} className="flex items-center gap-3 text-slate-700 font-medium">
+                  <span className="text-[#33C5F3] text-xl">✓</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
 
-        {/* 7. Hoe verloopt het behandelproces bij depressie? */}
-        <section className="py-24 bg-slate-50 border-b border-slate-100">
-          <div className="max-w-5xl mx-auto px-6">
-            <h2 className="text-3xl lg:text-4xl font-bold text-center text-slate-900 mb-6">Hoe verloopt het behandelproces?</h2>
-            <div className="w-20 h-1 bg-[#33C5F3] mx-auto mb-16"></div>
-            
-            <div className="space-y-12 relative before:absolute before:inset-0 before:ml-4 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-200 before:to-transparent">
-              
-              <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-                  <div className="flex items-center justify-center w-8 h-8 rounded-full border border-white bg-[#33C5F3] text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10"><span className="text-sm font-bold">1</span></div>
-                  <div className="w-[calc(100%-3rem)] md:w-[calc(50%-2rem)] bg-white p-6 rounded shadow-sm border border-slate-100">
-                      <h3 className="font-bold text-slate-900 text-xl mb-2">Intake en Diagnose</h3>
-                      <p className="text-slate-600">Onze regiebehandelaar voert een gedetailleerd psychiatrisch onderzoek uit, bestudeert uw verwijsbrief, en we voeren veiligheidsscreens (zoals het uitsluiten van epilepsie of implantaten) uit.</p>
-                  </div>
-              </div>
-
-              <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-                  <div className="flex items-center justify-center w-8 h-8 rounded-full border border-white bg-[#33C5F3] text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10"><span className="text-sm font-bold">2</span></div>
-                  <div className="w-[calc(100%-3rem)] md:w-[calc(50%-2rem)] bg-white p-6 rounded shadow-sm border border-slate-100">
-                      <h3 className="font-bold text-slate-900 text-xl mb-2">Behandelplan op maat</h3>
-                      <p className="text-slate-600">We creëren een 'brain-map'. We meten nauwkeurig uw 'motordrempel' om te bepalen op exact welke spoelsterkte we de depressieve netwerken in uw hoofd moeten activeren.</p>
-                  </div>
-              </div>
-
-              <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-                  <div className="flex items-center justify-center w-8 h-8 rounded-full border border-white bg-[#33C5F3] text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10"><span className="text-sm font-bold">3</span></div>
-                  <div className="w-[calc(100%-3rem)] md:w-[calc(50%-2rem)] bg-white p-6 rounded shadow-sm border border-slate-100">
-                      <h3 className="font-bold text-slate-900 text-xl mb-2">De rTMS-sessies</h3>
-                      <p className="text-slate-600">Terugkerende bezoeken. Reken op 2 tot 5 bezoeken per week in de kliniek. Een sessie duurt ongeveer 20 minuten, waarbij u ontspannen geluidsfragmenten luistert of een tijdschrift leest.</p>
-                  </div>
-              </div>
-
-              <div className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-                  <div className="flex items-center justify-center w-8 h-8 rounded-full border border-white bg-[#33C5F3] text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10"><span className="text-sm font-bold">4</span></div>
-                  <div className="w-[calc(100%-3rem)] md:w-[calc(50%-2rem)] bg-white p-6 rounded shadow-sm border border-slate-100">
-                      <h3 className="font-bold text-slate-900 text-xl mb-2">Nazorg en terugvalpreventie</h3>
-                      <p className="text-slate-600">Na zo'n 20 tot 30 sessies evalueren we de resultaten. Soms volgt een klein onderhoudstraject. De combinatie met aangeboden gesprekstherapie verankert deze nieuwe psychologische ruimte.</p>
-                  </div>
-              </div>
-
-            </div>
-          </div>
-        </section>
-
-        {/* 8. Combinatiebehandeling: rTMS + CGT */}
-        <section className="py-24 bg-white">
-          <div className="max-w-4xl mx-auto px-6 text-center">
-            <div className="w-16 h-16 rounded-full bg-slate-50 flex items-center justify-center text-3xl mx-auto mb-6 text-[#33C5F3]">
-              <FaHandHoldingHeart />
-            </div>
-            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">rTMS gecombineerd met psychotherapie</h2>
-            <p className="text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto">
-              Wij geloven niet in het behandelen van symptomen alléén. Bij onze centra wordt de magnetische stimulatie standaard aangeboden als <strong>combinatietherapie met Cognitieve Gedragstherapie (CGT)</strong> of vergelijkbare stromingen. Door de biologische blokkades in het brein op te heffen met rTMS, ontstaat de noodzakelijke mentale brandstof uw gedachten- en gedragspatronen daadwerkelijk te veranderen via goede gesprekstherapie.
-            </p>
-          </div>
-        </section>
-
-        {/* 9. Ervaringen / 10. Wetenschappelijke publicaties */}
-        <section className="py-24 bg-[#2b2e4a] text-white">
-          <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16">
-            
-            <div>
-              <h2 className="text-3xl font-bold mb-8">Ervaringen van patiënten</h2>
-              <div className="space-y-6">
-                <blockquote className="bg-white/5 p-6 border-l-4 border-[#33C5F3]">
-                  <p className="italic text-slate-300 leading-relaxed mb-4">"Voordat ik met rTMS in Heiloo startte, kwam ik mijn bed niet meer uit. De medicatie dempte mij alleen maar. Vanaf sessie 12 merkte ik dat de 'grijze sluier' langzaam optrok. Ik functioneer weer en heb de regie terug."</p>
-                  <footer className="font-bold text-[#33C5F3]">— Anoniem (42 jaar, vrouw)</footer>
-                </blockquote>
-                <blockquote className="bg-white/5 p-6 border-l-4 border-[#33C5F3]">
-                  <p className="italic text-slate-300 leading-relaxed mb-4">"Een intensieve periode (3 keer in de week naar de kliniek), maar vergeleken met de bijwerkingen die ik had van 4 jaar SSRI's slikken, zou ik rTMS iedereen met therapieresistente klachten direct aanraden."</p>
-                  <footer className="font-bold text-[#33C5F3]">— Johan (55 jaar, man)</footer>
-                </blockquote>
-              </div>
-            </div>
-
-            <div>
-               <h2 className="text-3xl font-bold mb-8">Wetenschappelijk bewijs</h2>
-               <div className="space-y-6">
-                  <div className="flex gap-4 items-start">
-                    <FaCheckCircle className="text-[#33C5F3] text-xl shrink-0 mt-1" />
-                    <div>
-                      <h4 className="font-bold text-white mb-1">Richtlijn Depressie (Trimbos)</h4>
-                      <p className="text-slate-400 text-sm leading-relaxed">Geïndiceerd als krachtig instrument voorafgaand aan evt. 3e, zwaardere medicamenteuze lijnen of ECT-protocollen.</p>
-                    </div>
-                  </div>
-                  <div className="flex gap-4 items-start">
-                    <FaCheckCircle className="text-[#33C5F3] text-xl shrink-0 mt-1" />
-                    <div>
-                      <h4 className="font-bold text-white mb-1">Klinisch Onderzoek Amsterdam UMC</h4>
-                      <p className="text-slate-400 text-sm leading-relaxed">Bevestigt aanzienlijke respons- en remissiecijfers op de lange termijn, in het bijzonder wanneer gecombineerd met verbale therapie.</p>
-                    </div>
-                  </div>
-                  <div className="flex gap-4 items-start">
-                    <FaCheckCircle className="text-[#33C5F3] text-xl shrink-0 mt-1" />
-                    <div>
-                      <h4 className="font-bold text-white mb-1">Harvard Medical School publicaties</h4>
-                      <p className="text-slate-400 text-sm leading-relaxed">Verschillende neuro-imaging (MRI) studies tonen na rTMS trajecten structureel verhoogde activiteit aan in de prefrontale cortex.</p>
-                    </div>
-                  </div>
-               </div>
-            </div>
-
+        {/* Gratis intake */}
+        <section className="py-20 bg-[#2b2e4a] text-white">
+          <div className="max-w-3xl mx-auto px-6 text-center">
+            <h2 className="text-3xl font-bold mb-6">Plan een gratis intake</h2>
+            <p className="text-slate-300 text-lg leading-relaxed mb-10">Tijdens een gratis consult bekijken we of rTMS passend kan zijn voor jouw situatie. Je krijgt in dit gesprek van 20 minuten met een arts persoonlijk advies en ruimte om vragen te stellen.</p>
+            <Link href="/aanmelden/" className="inline-block px-10 py-5 bg-[#33C5F3] text-white font-bold rounded-full hover:bg-[#29a5cd] transition shadow-lg text-lg">
+              Gratis intake aanvragen
+            </Link>
           </div>
         </section>
 
