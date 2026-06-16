@@ -170,165 +170,76 @@ export default function BehandelingAngststoornis() {
           </div>
         </section>
 
-        {/* 2. Wat is een angststoornis? */}
-        <section className="py-24 bg-white border-b border-slate-100">
-          <div className="max-w-7xl mx-auto px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">Wat is een angststoornis?</h2>
-              <div className="w-20 h-1 bg-[#33C5F3] mx-auto mb-8"></div>
-              <p className="text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto">
-                Iedereen is weleens zenuwachtig of bang, maar bij een angststoornis is de angst zo buiten proportie dat het uw dagelijks functioneren lamlegt. Het is geen gebrek aan moed, maar een hapering in het waarschuwingssysteem van uw brein. Vormen waar rTMS vaak bij wordt ingezet omvatten:
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="bg-slate-50 p-6 border-t-[4px] border-[#33C5F3]">
-                <div className="w-10 h-10 bg-white shadow flex items-center justify-center rounded-full text-[#33C5F3] mb-4">
-                  <FaChartLine />
-                </div>
-                <h3 className="text-lg font-bold text-slate-900 mb-2">Gegeneraliseerde angststoornis (GAS)</h3>
-                <p className="text-sm text-slate-600 leading-relaxed">Constante, oncontroleerbare zorgen over alledaagse zaken zoals geld, gezondheid of familie, gepaard met chronische fysieke spanning.</p>
-              </div>
-              <div className="bg-slate-50 p-6 border-t-[4px] border-[#33C5F3]">
-                <div className="w-10 h-10 bg-white shadow flex items-center justify-center rounded-full text-[#33C5F3] mb-4">
-                  <FaHeartbeat />
-                </div>
-                <h3 className="text-lg font-bold text-slate-900 mb-2">Paniekstoornis</h3>
-                <p className="text-sm text-slate-600 leading-relaxed">Plotselinge, intense golven van doodsangst (paniekaanvallen) met heftige lichamelijke sensaties, waarna de angst voor een vólgende aanval uw leven regeert.</p>
-              </div>
-              <div className="bg-slate-50 p-6 border-t-[4px] border-[#33C5F3]">
-                <div className="w-10 h-10 bg-white shadow flex items-center justify-center rounded-full text-[#33C5F3] mb-4">
-                  <FaUsersSlash />
-                </div>
-                <h3 className="text-lg font-bold text-slate-900 mb-2">Sociale angststoornis</h3>
-                <p className="text-sm text-slate-600 leading-relaxed">Verlammende angst voor de beoordeling van anderen in sociale situaties, wat leidt tot ernstig vermijdingsgedrag en eenzaamheid.</p>
-              </div>
-              <div className="bg-slate-50 p-6 border-t-[4px] border-[#33C5F3]">
-                <div className="w-10 h-10 bg-white shadow flex items-center justify-center rounded-full text-[#33C5F3] mb-4">
-                  <FaWalking />
-                </div>
-                <h3 className="text-lg font-bold text-slate-900 mb-2">Specifieke fobieën</h3>
-                <p className="text-sm text-slate-600 leading-relaxed">Een intense, irrationele angst voor specifieke elementen (zoals vliegangst, hoogtevrees of claustrofobie) die uw bewegingsvrijheid limiteert.</p>
-              </div>
-            </div>
+        {/* Herkenning */}
+        <section className="py-20 bg-white border-b border-slate-100">
+          <div className="max-w-3xl mx-auto px-6">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Herken je dit?</h2>
+            <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
+            <p className="text-lg text-slate-600 leading-relaxed">Heb je last van constante onrust, paniekaanvallen of een angst voor situaties waar je vroeger gewoon doorheen ging? Misschien vermijd je steeds meer dingen, merk je dat je nooit echt ontspant, of ben je chronisch gespannen zonder duidelijke reden. Als die angstklachten blijven terugkomen of onvoldoende verbeteren, dan kan een rTMS behandeling op maat mogelijk helpen.</p>
           </div>
         </section>
 
-        {/* 3. Hoe beïnvloedt rTMS angstklachten? */}
-        <section className="py-24 bg-slate-50">
-          <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">Hoe beïnvloedt rTMS angstklachten?</h2>
-              <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
-              
-              <p className="text-slate-600 leading-relaxed mb-6">
-                Uit neurologisch onderzoek (MRI/FMRI) blijkt dat patiënten met chronische angst een structureel overactieve <strong>rechter prefrontale cortex</strong> en een hypergevoelige <strong>amygdala</strong> ('het angstcentrum') bezitten. Dit verklaart de onophoudelijke 'vecht-of-vlucht' stand waarin het zenuwstelsel zich bevindt.
-              </p>
-              
-              <p className="text-slate-600 leading-relaxed mb-8">
-                Bij de rTMS behandeling voor angst gebruiken wij veelal laagfrequente magnetische pulsen. Waar we bij depressie de netwerken proberen te 'wekken', zenden we hier een kalmerend ritme door de hyperactieve netwerken aan de rechterzijde. Dit veroorzaakt een remmend effect op de corticale prikkelbaarheid (inhibitie). Hierdoor komt het angstnetwerk fysiek tot rust, verminderen lichamelijke stressreacties en neemt onrust af.
-              </p>
-              
-              <div className="p-4 bg-white border-l-4 border-[#33C5F3] shadow-sm">
-                <span className="font-bold text-[#33C5F3] mb-1 block">Wetenschappelijk bewezen aanpak</span>
-                <p className="text-sm text-slate-600">De laagfrequente magneetstimulatie over de rechter dorso-laterale prefrontale cortex (rDLPFC) is een internationaal gepatenteerd en veilig behandelprotocol.</p>
-              </div>
-            </div>
-            
-            <div className="h-full min-h-[400px] bg-white border border-slate-200 shadow-sm flex flex-col justify-center items-center text-center p-6 relative">
-               <div className="w-full aspect-[4/3] bg-slate-100 flex items-center justify-center text-[#33C5F3] mb-6">
-                <FaBrain className="text-[120px]" />
-               </div>
-               <p className="text-sm text-slate-500 italic max-w-sm mx-auto">Figuur: rTMS richt zich op het neurologisch afremmen van de hyperactieve signaaloverdracht in het angstnetwerk.</p>
-            </div>
+        {/* Wat is rTMS */}
+        <section className="py-20 bg-slate-50 border-b border-slate-100">
+          <div className="max-w-3xl mx-auto px-6">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Wat is rTMS?</h2>
+            <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
+            <p className="text-lg text-slate-600 leading-relaxed">rTMS is een niet-invasieve behandeling waarbij zachte magnetische pulsen bepaalde gebieden in de hersenen stimuleren die betrokken zijn bij spanning en angstreacties. Tijdens de behandeling wordt een rTMS-spoel tegen het hoofd geplaatst. De behandeling doet geen pijn en je bent gewoon bij bewustzijn. Omdat iedere situatie anders is, wordt eerst bekeken of rTMS passend kan zijn voor jouw klachten.</p>
           </div>
         </section>
 
-        {/* 4. Voor wie is rTMS bij angst geschikt? / 5. Effectiviteit */}
-        <section className="py-24 bg-[#2b2e4a] text-white">
-          <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16">
-            
-            <div>
-                 <h2 className="text-3xl font-bold mb-6">Voor wie is rTMS bij angst geschikt?</h2>
-                 <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
-                 <p className="text-slate-300 leading-relaxed text-lg mb-6">
-                   rTMS is een zeer veilige keuze voor volwassenen die vastlopen in hun herstel. Deze behandeling is speciaal effectief als u:
-                 </p>
-                 <ul className="space-y-4 mb-8">
-                   <li className="flex items-start gap-4">
-                     <FaCheckCircle className="text-[#33C5F3] text-xl shrink-0 mt-1" />
-                     <p className="text-slate-300"><strong className="text-white">Medicatie resitent bent:</strong> U heeft SSRI's of anxiolytica geprobeerd zonder voldoende effect, of weigert afhankelijk te worden van zwaar verslavende pam-medicatie (benzodiazepinen).</p>
-                   </li>
-                   <li className="flex items-start gap-4">
-                     <FaCheckCircle className="text-[#33C5F3] text-xl shrink-0 mt-1" />
-                     <p className="text-slate-300"><strong className="text-white">Stagneert in psychotherapie:</strong> Uw angstpeil is zó hoog dat de gesprekken met uw psycholoog (die veel van uw analytisch vermogen vergen) niet doordringen.</p>
-                   </li>
-                 </ul>
-                 <p className="text-slate-400 text-sm">Let op: Net als bij andere rTMS-protocollen zijn mensen met een verhoogd risico op epilepsie of metaal in het hoofd uitgesloten van deze behandelmethode.</p>
-            </div>
-
-            <div className="bg-white/5 border border-white/10 p-10 relative overflow-hidden flex flex-col justify-center">
-               <h2 className="text-3xl lg:text-4xl font-bold mb-6">Effectiviteit en Resultaat</h2>
-               <p className="text-slate-300 text-lg leading-relaxed mb-6">
-                 Onderzoek, onder andere gepubliceerd in vooraanstaande bladen zoals de <em>Journal of Psychiatric Research</em>, toont aan dat zo'n 50% tot 60% van de behandelde populatie met een aanhoudende paniek- of angststoornis significante en duurzame verbetering rapporteert.
-               </p>
-               <p className="text-slate-300 text-lg leading-relaxed mb-6">
-                Doorgaans starten patiënten met 2 tot 3 sessies per week. Effecten worden redelijk snel waargenomen; veel patiënten omschrijven na 10 sessies dat de 'scherpe randjes' aanzienlijk afnemen en de 'mist optrekt'.
-               </p>
-            </div>
-
+        {/* Waarom overwegen */}
+        <section className="py-20 bg-white border-b border-slate-100">
+          <div className="max-w-3xl mx-auto px-6">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Waarom mensen rTMS overwegen</h2>
+            <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
+            <p className="text-slate-600 mb-6">Deze behandeling is voor je wanneer je:</p>
+            <ul className="space-y-4">
+              {[
+                'al langere tijd last hebt van angst en merkt dat therapie of medicatie onvoldoende helpt',
+                'afhankelijk bent geworden van kalmeringsmiddelen en daar vanaf wilt',
+                'merkt dat gesprekken met een psycholoog niet goed doordringen omdat de spanning te hoog is',
+                'op zoek bent naar een behandeling zonder zware bijwerkingen',
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-3 text-slate-600">
+                  <span className="w-2 h-2 rounded-full bg-[#33C5F3] mt-2 shrink-0"></span>
+                  {item}
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
 
-        {/* 6. Combinatie met cognitieve gedragstherapie (CGT) */}
-        <section className="py-24 bg-white border-b border-slate-100">
-          <div className="max-w-4xl mx-auto px-6 text-center">
-            <div className="w-16 h-16 rounded-full bg-slate-50 flex items-center justify-center text-3xl mx-auto mb-6 text-[#33C5F3]">
-              <FaHandHoldingHeart />
-            </div>
-            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">Combinatie met Cognitieve Gedragstherapie (CGT)</h2>
-            <div className="w-20 h-1 bg-[#33C5F3] mx-auto mb-10"></div>
-            <p className="text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto mb-6">
-              Angst is hardnekkig. Zelfs als het zenuwstelsel fysiek gekalmeerd wordt door rTMS, moeten de aangeleerde denkpatronen en vermijdingsreacties nog structureel worden afgeleerd. 
-            </p>
-            <p className="text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto font-medium">
-              Daarom combineren wij de hersenstimulatie met gesprekstherapie (met focus op Cognitieve Gedragstherapie). Waar de magneet de biologische ontvankelijkheid in de prefrontale cortex herstelt, bouwt onze psycholoog met u nieuwe gezonde denkconstructies op om paniekreacties toekomstbestendig het hoofd te bieden. 
-            </p>
+        {/* Wat je kunt verwachten */}
+        <section className="py-20 bg-slate-50 border-b border-slate-100">
+          <div className="max-w-3xl mx-auto px-6">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Wat je kunt verwachten</h2>
+            <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
+            <ul className="space-y-4">
+              {[
+                'Behandeling zonder medicatie',
+                'Behandelplan afgestemd op jouw situatie',
+                'Minder spanning en onrust in het dagelijks leven',
+                'Betere nachtrust en meer rust in het hoofd',
+              ].map((item, i) => (
+                <li key={i} className="flex items-center gap-3 text-slate-700 font-medium">
+                  <span className="text-[#33C5F3] text-xl">✓</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
 
-        {/* 7. Ervaringen en Vergoeding */}
-        <section className="py-24 bg-slate-50">
-           <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16">
-             
-             {/* Ervaringen */}
-             <div>
-              <h2 className="text-3xl font-bold text-slate-900 mb-8">Ervaringen van patiënten</h2>
-              <div className="space-y-6">
-                <blockquote className="bg-white p-6 border-l-4 border-[#33C5F3] shadow-sm">
-                  <p className="italic text-slate-600 leading-relaxed mb-4">"Mijn sociale fobie was zo hevig dat naar de supermarkt gaan voelde als een gevecht op leven of dood. Na vijftien behandelingen merkte ik opeens dat mijn hartslag normaal bleef tijdens het afrekenen. Rijkdom."</p>
-                  <footer className="font-bold text-slate-900">— Sarah (28 jaar)</footer>
-                </blockquote>
-                <blockquote className="bg-white p-6 border-l-4 border-[#33C5F3] shadow-sm">
-                  <p className="italic text-slate-600 leading-relaxed mb-4">"Ik stond op het punt zware kalmeringsmiddelen te slikken vanwege mijn constante gespannen gevoel. Gelukkig vond ik rTMS en bleek ik 's nachts gewoon weer te kunnen ontspannen en doorslapen. Het voelde letterlijk alsof de 'kortsluiting' in mijn hoofd werd weggenomen."</p>
-                  <footer className="font-bold text-slate-900">— Mark (45 jaar)</footer>
-                </blockquote>
-              </div>
-            </div>
-
-            {/* Vergoeding */}
-            <div className="bg-white border border-slate-200 shadow-sm p-10 flex flex-col justify-center">
-                 <div className="w-12 h-12 bg-slate-50 flex items-center justify-center text-[#33C5F3] rounded-full mb-6 text-2xl"><FaUserShield /></div>
-                 <h2 className="text-3xl font-bold text-slate-900 mb-6">Is rTMS bij angst vergoed?</h2>
-                 <p className="text-slate-600 leading-relaxed mb-6">
-                   Vergoeding binnen de Nederlandse basisverzekering (GGZ) voor rTMS is strikt afgebakend en voornamelijk gereserveerd voor patiënten met therapieresistente <strong>depressie</strong>. Voor een enkelvoudige, onvermengde angstdiagnose weigeren de meeste verzekeraars momenteel direct dekking.
-                 </p>
-                 <p className="text-slate-600 leading-relaxed font-bold mb-6">
-                   Let op: Vaak gaan ernstige angst- of paniekstoornissen hand in hand met secundaire zware depressieve episodes. Onze regiebehandelaar beoordeelt nauwkeurig uw casus tijdens de intake om te bepalen of wij toch aanspraak kunnen maken op vergoeding via uw polis.
-                 </p>
-            </div>
-
-           </div>
+        {/* Gratis intake */}
+        <section className="py-20 bg-[#2b2e4a] text-white">
+          <div className="max-w-3xl mx-auto px-6 text-center">
+            <h2 className="text-3xl font-bold mb-6">Plan een gratis intake</h2>
+            <p className="text-slate-300 text-lg leading-relaxed mb-10">Tijdens een gratis consult bekijken we of rTMS passend kan zijn voor jouw situatie. Je krijgt in dit gesprek van 20 minuten met een arts persoonlijk advies en ruimte om vragen te stellen.</p>
+            <Link href="/aanmelden/" className="inline-block px-10 py-5 bg-[#33C5F3] text-white font-bold rounded-full hover:bg-[#29a5cd] transition shadow-lg text-lg">
+              Gratis intake aanvragen
+            </Link>
+          </div>
         </section>
 
         {/* 8. Veelgestelde vragen over rTMS bij angst */}
