@@ -166,130 +166,79 @@ export default function BehandelingTinnitus() {
           </div>
         </section>
 
-        {/* 2. Wat is tinnitus en hoe ontstaat het in de hersenen? */}
-        <section className="py-24 bg-white border-b border-slate-100">
-          <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-start">
-            
-            <div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">Wat is tinnitus en hoe ontstaat het in de hersenen?</h2>
-              <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
-              <p className="text-lg text-slate-600 leading-relaxed mb-6">
-                Tinnitus is het horen van een geluid—zoals een constante hoge piep, geruis of een bromtoon—dat niet uit de omgeving afkomstig is. Hoewel tinnitus vaak begint na gehoorschade (bijvoorbeeld in het mechanisme in uw binnenoor of bij de gehoorzenuw), bevindt het eigenlijke probleem waar u last van heeft zich <strong>in de hersenen</strong>.
-              </p>
-              <p className="text-lg text-slate-600 leading-relaxed">
-                Als reactie op het ontbreken van normale geluidsprikkels vanuit het oor, worden de hoorcentra in uw hersenschors (de auditieve cortex) hyperactief. Vergelijkbaar met "fantoompijn" na een amputatie, gaat het brein fantoomgeluid produceren. Als tinnitus chronisch wordt, ontstaat er vaak een slopende feedbacklus met het emotiecentrum in uw brein (voor angst en stress) en het slaapwaaksysteem. Het geluid wordt als levensbedreigend geïnterpreteerd, waardoor u in een permanente alarmfase staat.
-              </p>
-            </div>
-
-            <div className="bg-slate-50 p-10 border-l-[6px] border-[#33C5F3] relative object-cover h-full">
-               <div className="absolute top-0 right-0 p-6 text-slate-200"><FaBrain className="text-9xl" /></div>
-               <div className="relative z-10">
-                 <h2 className="text-3xl font-bold text-slate-900 mb-6">Het "Fantoomgeluid"</h2>
-                 <p className="text-slate-600 leading-relaxed mb-6">
-                   Tinnitus is geen oorgeneeskundig probleem meer zodra het chronisch wordt; het is een neurobiologisch fenomeen. KNO-artsen geven vaak de moed op en zeggen: "leer er maar mee leven," maar neurowetenschappers zoeken inmiddels met succes de oplossing direct in de hersenschors.
-                 </p>
-               </div>
-            </div>
-
+        {/* Herkenning */}
+        <section className="py-20 bg-white border-b border-slate-100">
+          <div className="max-w-3xl mx-auto px-6">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Herken je dit?</h2>
+            <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
+            <p className="text-lg text-slate-600 leading-relaxed">Heb je last van een constante piep, ruis of bromtoon in je oren die er altijd is, ook als het stil is? Misschien slaap je erdoor slecht, kost het je concentratie of merk je dat de spanning rondom het geluid steeds groter wordt. Als die klachten al langer dan zes maanden aanhouden en reguliere behandelingen onvoldoende helpen, dan kan een rTMS behandeling op maat mogelijk helpen.</p>
           </div>
         </section>
 
-        {/* 3. Hoe werkt rTMS bij tinnitus? */}
-        <section className="py-24 bg-slate-50">
-          <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
-            
-            <div className="h-full min-h-[440px] bg-white border border-slate-200 shadow-sm flex flex-col justify-center items-center text-center p-6 relative">
-               <div className="w-full aspect-[4/3] bg-slate-100 flex items-center justify-center text-[#33C5F3] mb-6">
-                <FaVolumeMute className="text-[120px]" />
-               </div>
-               <p className="text-sm text-slate-500 italic max-w-sm mx-auto">Figuur: rTMS helpt het hyperactieve 'aan' signaal rondom het temporale auditieve centrum tot rust te brengen.</p>
-            </div>
-
-            <div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">Hoe werkt rTMS bij tinnitus?</h2>
-              <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
-              
-              <p className="text-slate-600 leading-relaxed mb-8">
-                Repetitieve Transcraniële Magnetische Stimulatie (rTMS) wekt via een spoel magnetische velden op die uw schedel moeiteloos passeren en de zenuwcellen in uw hersenschors beïnvloeden. Hoe we rTMS inzetten bij Tinnitus is echter anders dan bij depressie.
-              </p>
-
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Targeting van de Auditieve Cortex</h3>
-              <p className="text-slate-600 leading-relaxed mb-4">
-                Bij de behandeling van oorsuizen plaatsen we de spoel doorgaans boven de tijdelijke kwab aan de zijkant van het hoofd (de temporale cortex of temporopariëtale junctie). We gebruiken een specifiek <strong>laagfrequent protocol</strong> (inhiberend).
-              </p>
-              <p className="text-slate-600 leading-relaxed mb-6">
-                Dit trage ritme van pulsen is ontworpen om de abnormale vuursnelheid van die hyperactieve auditieve netwerken af te remmen. We verzwakken letterlijk het "volume" van de hersengebieden die het fantoomgeluid onafgebroken produceren of opschalen. Door deze neuroplasticiteit kan het volume van de fluit of suis structureel naar de achtergrond gedrukt worden.
-              </p>
-
-            </div>
-
+        {/* Wat is rTMS */}
+        <section className="py-20 bg-slate-50 border-b border-slate-100">
+          <div className="max-w-3xl mx-auto px-6">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Wat is rTMS?</h2>
+            <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
+            <p className="text-lg text-slate-600 leading-relaxed">rTMS is een niet-invasieve behandeling waarbij zachte magnetische pulsen bepaalde gebieden in de hersenen stimuleren die bij chronisch oorsuizen overactief zijn geworden. Tijdens de behandeling wordt een rTMS-spoel tegen het hoofd geplaatst. De behandeling doet geen pijn en je bent gewoon bij bewustzijn. Omdat iedere situatie anders is, wordt eerst bekeken of rTMS passend kan zijn voor jouw klachten.</p>
           </div>
         </section>
 
-        {/* 4. Wat zijn de resultaten? / 5. Voor wie is het geschikt? */}
-        <section className="py-24 bg-white border-t border-slate-100">
-          <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16">
-            
-            <div>
-              <div className="w-12 h-12 bg-slate-50 rounded-full flex items-center justify-center text-[#33C5F3] mb-6 shadow-sm text-xl"><FaChartLine /></div>
-              <h2 className="text-3xl font-bold text-slate-900 mb-4">Wat zijn de resultaten?</h2>
-              <div className="w-16 h-1 bg-[#33C5F3] mb-6"></div>
-              <p className="text-slate-600 leading-relaxed mb-4">Er heerst helaas veel foute informatie online. rTMS is momenteel (nog) <strong className="text-slate-900">géén wondermiddel dat 100% garant staat voor stilte</strong>. Klinische realiteit vereist realistische verwachtingen:</p>
-              <ul className="space-y-4 text-slate-600 leading-relaxed">
-                <li className="flex items-start gap-4">
-                  <span className="text-[#33C5F3] mt-1"><FaCheckCircle /></span>
-                  <strong>Succesratio's:</strong> Studies, en onze ervaringen, tonen aan dat ongeveer 40% tot 60% van de gepaste kandidaten een merkbare, positieve verlaging van de "Tinnitus Handicap score" ervaart na een testtraject.
+        {/* Waarom overwegen */}
+        <section className="py-20 bg-white border-b border-slate-100">
+          <div className="max-w-3xl mx-auto px-6">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Waarom mensen rTMS overwegen</h2>
+            <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
+            <p className="text-slate-600 mb-6">Deze behandeling is voor je wanneer je:</p>
+            <ul className="space-y-4">
+              {[
+                'al langer dan zes maanden last hebt van oorsuizen dat niet minder wordt',
+                'slaapproblemen of concentratieproblemen hebt door het geluid',
+                'eerder behandelingen hebt geprobeerd (zoals geluidstherapie) zonder voldoende resultaat',
+                'op zoek bent naar een behandeling die ingrijpt op de bron van het geluid in de hersenen',
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-3 text-slate-600">
+                  <span className="w-2 h-2 rounded-full bg-[#33C5F3] mt-2 shrink-0"></span>
+                  {item}
                 </li>
-                <li className="flex items-start gap-4">
-                  <span className="text-[#33C5F3] mt-1"><FaCheckCircle /></span>
-                  <strong>Lijdensdruk:</strong> Veelal verdwijnt de piep niet, maar verdwijnt de slopende 'onrust' rondom het geluid. Patiënten kunnen weer doorslapen en werken met focus. 
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <div className="w-12 h-12 bg-slate-50 rounded-full flex items-center justify-center text-[#33C5F3] mb-6 shadow-sm text-xl"><FaAssistiveListeningSystems /></div>
-              <h2 className="text-3xl font-bold text-slate-900 mb-4">Voor wie is rTMS bij tinnitus geschikt?</h2>
-              <div className="w-16 h-1 bg-[#33C5F3] mb-6"></div>
-              <p className="text-slate-600 leading-relaxed mb-4">
-                Wanneer KNO-behandelingen (inclusief het uitsluiten van tumoren of de ziekte van Menière) zijn vastgelopen en de klachten langer duren dan 6 maanden, spreekt men van chronische tinnitus. U bent een potentiële kandidaat als:
-              </p>
-               <ul className="space-y-3 text-slate-600 leading-relaxed list-disc list-inside ml-2">
-                 <li>Het suizen ondraaglijk is en resulteert in stemmings- of slaapproblemen.</li>
-                 <li>U geen hoortoestel of ruismaskeerder (voldoende) kunt tolereren.</li>
-                 <li>U op zoek bent naar een traject naast cognitieve gedragstherapie en accepteert dat het volume 'verlagen', en niet absolute stilte, het voornaamste medische doelwit is.</li>
-               </ul>
-            </div>
-
+              ))}
+            </ul>
           </div>
         </section>
 
-        {/* 6. Is rTMS bij tinnitus vergoed? */}
-        <section className="py-24 bg-[#2b2e4a] text-white">
-          <div className="max-w-4xl mx-auto px-6 text-center">
-            <div className="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center text-3xl mx-auto mb-6 text-white border border-[#33C5F3] shadow-lg">
-              <FaUserShield />
-            </div>
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6">Is rTMS bij tinnitus vergoed?</h2>
-            <div className="w-20 h-1 bg-[#33C5F3] mx-auto mb-10"></div>
-            
-            <div className="bg-white/5 border border-white/10 p-8 text-left rounded-lg shadow-sm mb-10">
-               <h3 className="text-2xl font-bold mb-4 text-[#33C5F3]">Nee, in nagenoeg alle gevallen niet.</h3>
-               <p className="text-slate-300 text-lg leading-relaxed mb-4">
-                 Transparantie is in de medische sector essentieel. Tinnitus is (in tegenstelling tot therapieresistente depressie) in Nederland <strong>géén goedgekeurde indicatie</strong> voor vergoeding uit het basispakket (GGZ) voor hersenstimulatie. 
-               </p>
-               <p className="text-slate-300 text-lg leading-relaxed">
-                 Dit betekent dat alle consulten en trajecten specifiek gericht op onvermengd oorsuizen, via onze klinieken veelal op <strong>particuliere basis</strong> door de patiënt zelf dienen te worden bekostigd. De enige zeldzame uitzondering vormt het scenario waarbij de Tinnitus dusdanig escalerend is geweest, dat onze psychiater op de voorgrond een zware 'Therapieresistente Depressie' (met suïcidaliteit / uitval) vaststelt die als hoofddoel behandeld wordt. 
-               </p>
-            </div>
+        {/* Wat je kunt verwachten */}
+        <section className="py-20 bg-slate-50 border-b border-slate-100">
+          <div className="max-w-3xl mx-auto px-6">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Wat je kunt verwachten</h2>
+            <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
+            <ul className="space-y-4">
+              {[
+                'Behandeling zonder medicatie',
+                'Behandelplan afgestemd op jouw situatie',
+                'Vermindering van het volume of de hinderlijkheid van het suizen',
+                'Betere nachtrust en meer rust in het dagelijks leven',
+              ].map((item, i) => (
+                <li key={i} className="flex items-center gap-3 text-slate-700 font-medium">
+                  <span className="text-[#33C5F3] text-xl">✓</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
 
-            <Link href="/contact/" className="inline-block px-10 py-5 bg-white text-[#2b2e4a] font-bold hover:bg-slate-100 transition-colors shadow-lg rounded-full text-lg">
-                Vraag onze actuele particuliere tarieven op
+        {/* Gratis intake */}
+        <section className="py-20 bg-[#2b2e4a] text-white">
+          <div className="max-w-3xl mx-auto px-6 text-center">
+            <h2 className="text-3xl font-bold mb-6">Plan een gratis intake</h2>
+            <p className="text-slate-300 text-lg leading-relaxed mb-10">Tijdens een gratis consult bekijken we of rTMS passend kan zijn voor jouw situatie. Je krijgt in dit gesprek van 20 minuten met een arts persoonlijk advies en ruimte om vragen te stellen.</p>
+            <Link href="/aanmelden/" className="inline-block px-10 py-5 bg-[#33C5F3] text-white font-bold rounded-full hover:bg-[#29a5cd] transition shadow-lg text-lg">
+              Gratis intake aanvragen
             </Link>
           </div>
         </section>
 
-        {/* 7. Veelgestelde vragen over rTMS bij tinnitus */}
+                {/* 7. Veelgestelde vragen over rTMS bij tinnitus */}
         <section className="py-24 bg-white border-t border-slate-100">
           <div className="max-w-4xl mx-auto px-6">
             <div className="text-center mb-12">

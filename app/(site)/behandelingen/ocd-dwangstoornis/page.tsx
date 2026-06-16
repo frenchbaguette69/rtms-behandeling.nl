@@ -166,143 +166,75 @@ export default function BehandelingOcd() {
           </div>
         </section>
 
-        {/* 2. Wat is OCD? / 3. De rol van de hersenen */}
-        <section className="py-24 bg-white border-b border-slate-100">
-          <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-start">
-            
-            <div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">Wat is OCD (obsessief-compulsieve stoornis)?</h2>
-              <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
-              <p className="text-lg text-slate-600 leading-relaxed mb-6">
-                Een Obsessief-Compulsieve Stoornis (OCD), in de volksmond vaak dwangstoornis genoemd, kenmerkt zich door hardnekkige, ongewenste gedachten (obsessies) die hevige angst of onrust veroorzaken. Om die onrust te verlagen voelt u zich gedwongen om bepaalde handelingen (compulsies) eindeloos uit te voeren. Dit kan variëren van extreme smetvrees tot tel-rituelen en agressieve of verontrustende intrusies.
-              </p>
-              <p className="text-lg text-slate-600 leading-relaxed">
-                Het is een slopende aandoening die veel energie kost. Veel patiënten voelen zich opgesloten in een vicieuze cirkel waarbij therapie alleen soms onvoldoende effect heeft en zware medicatie nodig lijkt.
-              </p>
-            </div>
-
-            <div className="bg-slate-50 p-10 border-l-[6px] border-[#33C5F3] relative object-cover h-full">
-               <div className="absolute top-0 right-0 p-6 text-slate-200"><FaBrain className="text-9xl" /></div>
-               <div className="relative z-10">
-                 <h2 className="text-3xl font-bold text-slate-900 mb-6">De rol van de hersenen bij OCD</h2>
-                 <p className="text-slate-600 leading-relaxed mb-6">
-                   Modern hersenonderzoek toont aan dat OCD geen 'karaktertrek' is, maar een functionele overactiviteit in specifieke hersencircuits (zoals de <em>cortico-striato-thalamo-corticale</em> lus). 
-                 </p>
-                 <p className="text-slate-600 leading-relaxed font-bold">
-                   Simpel gezegd: het "foutfilter" van de hersenen blijft hangen op een alarmstand, waardoor de neurologische signalen in een eindeloze loop vastlopen (kortsluiting). Uw brein herkent niet dat het gevaar is geweken, zelfs al weet u dit rationeel wel.
-                 </p>
-               </div>
-            </div>
-
+        {/* Herkenning */}
+        <section className="py-20 bg-white border-b border-slate-100">
+          <div className="max-w-3xl mx-auto px-6">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Herken je dit?</h2>
+            <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
+            <p className="text-lg text-slate-600 leading-relaxed">Heb je last van gedachten die steeds terugkomen en niet loslaten, of handelingen die je moet herhalen om de spanning te laten zakken? Misschien kost dat je al uren per dag en merk je dat therapie of medicatie onvoldoende houvast geeft. Als die klachten blijven aanhouden, dan kan een rTMS behandeling op maat mogelijk helpen.</p>
           </div>
         </section>
 
-        {/* 4. Hoe werkt rTMS bij OCD? */}
-        <section className="py-24 bg-slate-50">
-          <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
-            
-            <div className="h-full min-h-[440px] bg-white border border-slate-200 shadow-sm flex flex-col justify-center items-center text-center p-6 relative">
-               <div className="w-full aspect-[4/3] bg-slate-100 flex items-center justify-center text-[#33C5F3] mb-6">
-                <FaLock className="text-[120px]" />
-               </div>
-               <p className="text-sm text-slate-500 italic max-w-sm mx-auto">Figuur: rTMS 'reset' het communicatienetwerk en doorbreekt de loop tussen de prefrontale cortex en de basale ganglia.</p>
-            </div>
-
-            <div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">Hoe werkt rTMS bij OCD?</h2>
-              <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
-              
-              <p className="text-slate-600 leading-relaxed mb-8">
-                Repetitieve Transcraniële Magnetische Stimulatie (rTMS) wekt kleine, gerichte stroompjes op dwars door de schedel heen. Deze pulsen moduleren direct de hyperactieve netwerken die geassocieerd zijn met controleverlies en angst.
-              </p>
-
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Welke hersengebieden worden gestimuleerd bij OCD?</h3>
-              <p className="text-slate-600 leading-relaxed mb-4">
-                Terwijl we bij depressie vaak de dorso-laterale prefrontale cortex (DLPFC) stimuleren om hem te activeren, ligt bij OCD de focus op netwerken zoals de <strong>mPFC (mediale prefrontale cortex)</strong> of het <strong>SMA (supplementary motor area)</strong>.
-              </p>
-              <p className="text-slate-600 leading-relaxed mb-6">
-                Door laagfrequente (remmende) stimulatie toe te passen op deze specifieke gebieden, forceert rTMS een neurobiologische afremming. U doorbreekt de vastgelopen lus. Het brein leert opnieuw te filteren, wat de extreme aandrang (compulsies) aanzienlijk verzwakt.
-              </p>
-
-            </div>
-
+        {/* Wat is rTMS */}
+        <section className="py-20 bg-slate-50 border-b border-slate-100">
+          <div className="max-w-3xl mx-auto px-6">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Wat is rTMS?</h2>
+            <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
+            <p className="text-lg text-slate-600 leading-relaxed">rTMS is een niet-invasieve behandeling waarbij zachte magnetische pulsen bepaalde gebieden in de hersenen stimuleren die bij OCD overactief zijn. Tijdens de behandeling wordt een rTMS-spoel tegen het hoofd geplaatst. De behandeling doet geen pijn en je bent gewoon bij bewustzijn. Omdat iedere situatie anders is, wordt eerst bekeken of rTMS passend kan zijn voor jouw klachten.</p>
           </div>
         </section>
 
-        {/* 5. Resultaten / 6. ERP Combinatie */}
-        <section className="py-24 bg-white border-t border-slate-100">
-          <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16">
-            
-            <div>
-              <div className="w-12 h-12 bg-slate-50 rounded-full flex items-center justify-center text-[#33C5F3] mb-6 shadow-sm text-xl"><FaChartLine /></div>
-              <h2 className="text-3xl font-bold text-slate-900 mb-4">Resultaten van rTMS bij OCD</h2>
-              <div className="w-16 h-1 bg-[#33C5F3] mb-6"></div>
-              <p className="text-slate-600 leading-relaxed mb-4">In de klinische praktijk blijkt dat veel OCD patiënten de behandeling als 'bevrijdend' ervaren, nadat eerdere trajecten strandden.</p>
-              <ul className="space-y-4 text-slate-600 leading-relaxed">
-                <li className="flex items-start gap-4">
-                  <span className="text-[#33C5F3] mt-1"><FaCheckCircle /></span>
-                  <strong>Afname in compulsies:</strong> Onderzoeken tonen aanzienlijke reducties in de tijd besteed aan dwanghandelingen (Y-BOCS scores dalen sterk).
+        {/* Waarom overwegen */}
+        <section className="py-20 bg-white border-b border-slate-100">
+          <div className="max-w-3xl mx-auto px-6">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Waarom mensen rTMS overwegen</h2>
+            <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
+            <p className="text-slate-600 mb-6">Deze behandeling is voor je wanneer je:</p>
+            <ul className="space-y-4">
+              {[
+                'merkt dat dwanggedachten of -handelingen je dagelijks leven bepalen',
+                'al eerder therapie hebt geprobeerd maar er niet genoeg mee opschoot',
+                'medicatie hebt geprobeerd zonder voldoende effect of met te veel bijwerkingen',
+                'op zoek bent naar een behandeling die direct ingrijpt op de bron van de klacht',
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-3 text-slate-600">
+                  <span className="w-2 h-2 rounded-full bg-[#33C5F3] mt-2 shrink-0"></span>
+                  {item}
                 </li>
-                <li className="flex items-start gap-4">
-                  <span className="text-[#33C5F3] mt-1"><FaCheckCircle /></span>
-                  <strong>Minder angst voor intrusies:</strong> Obsessieve gedachten worden minder 'plakkerig'; men ervaart afstand.
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <div className="w-12 h-12 bg-slate-50 rounded-full flex items-center justify-center text-[#33C5F3] mb-6 shadow-sm text-xl"><FaSyncAlt /></div>
-              <h2 className="text-3xl font-bold text-slate-900 mb-4">Combinatie met ERP-therapie</h2>
-              <div className="w-16 h-1 bg-[#33C5F3] mb-6"></div>
-              <p className="text-slate-600 leading-relaxed mb-4">
-                rTMS is enorm krachtig als neuro-biologische oplader, maar bij OCD passen we dit het beste toe als combinatiebehandeling met <strong>Exposure and Response Prevention (ERP)</strong>.
-              </p>
-              <p className="text-slate-600 leading-relaxed">
-                Blootstellingstherapie (ERP) is pijnlijk zwaar voor patiënten en wordt vaak niet volgehouden wegens de chronische angst. Doordat de rTMS de neurologische angstrespons voorwerk afzwakt, wordt de patiënt in staat gesteld de ERP sessies daadwerkelijk succesvol te voltooien en zo duurzaam de gedragspatronen af te leren.
-              </p>
-            </div>
-
+              ))}
+            </ul>
           </div>
         </section>
 
-        {/* 7. Is rTMS bij OCD vergoed? / 8. Ervaringen / 9. Bewijs */}
-        <section className="py-24 bg-[#2b2e4a] text-white">
-          <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16">
-            
-            <div className="space-y-16">
-               <div className="bg-white/5 border border-white/10 p-10 relative overflow-hidden flex flex-col justify-center">
-                  <div className="w-12 h-12 bg-[#33C5F3] flex items-center justify-center text-white rounded-full mb-6 text-2xl"><FaUserShield /></div>
-                  <h2 className="text-3xl font-bold mb-6">Is rTMS bij OCD vergoed?</h2>
-                  <p className="text-slate-300 leading-relaxed mb-6">
-                    In Nederland en bij onze verzekeraars is het behandelprotocol vergoed op voorwaarde van een diagnose <strong>therapieresistente depressie</strong>. Omdat OCD enorm belastend is voor het mentaal welzijn en een comorbide depressie zeer aannemelijk is, beoordelen we in de intake of uw behandeltraject aan de criteria voldoet om vergoed (via GGZ basisverzekering) in te regelen.
-                  </p>
-                  <Link href="/vergoeding-kosten/" className="text-[#33C5F3] font-bold uppercase tracking-wider text-sm flex items-center gap-2 hover:text-white transition-colors">
-                    Bekijk de spelregels voor vergoeding <FaChevronDown className="rotate-[-90deg]" />
-                  </Link>
-               </div>
+        {/* Wat je kunt verwachten */}
+        <section className="py-20 bg-slate-50 border-b border-slate-100">
+          <div className="max-w-3xl mx-auto px-6">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Wat je kunt verwachten</h2>
+            <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
+            <ul className="space-y-4">
+              {[
+                'Behandeling zonder medicatie',
+                'Behandelplan afgestemd op jouw situatie',
+                'Minder dwang en meer mentale rust',
+                'Meer ruimte in je hoofd voor wat echt telt',
+              ].map((item, i) => (
+                <li key={i} className="flex items-center gap-3 text-slate-700 font-medium">
+                  <span className="text-[#33C5F3] text-xl">✓</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
 
-               <div>
-                 <h2 className="text-3xl font-bold mb-6 flex items-center gap-4"><FaMicroscope className="text-[#33C5F3]" /> Wetenschappelijk bewijs</h2>
-                 <p className="text-slate-300 leading-relaxed mb-4">
-                   Internationale verenigingen voor psychiatrie hebben rTMS methodieken geaccepteerd (net als de FDA in de VS specifiek voor OCD-protocollen) als betrouwbare en veilige module. Klinisch onderzoek bewijst bovendien dat rTMS op het SMA aanzienlijk betere langetermijnrespons geeft vergeleken met enkel een verhoging van SSRI medicatie.
-                 </p>
-               </div>
-            </div>
-
-            <div>
-              <h2 className="text-3xl font-bold mb-8">Ervaringen van patiënten met OCD</h2>
-              <div className="space-y-6">
-                <blockquote className="bg-white/5 p-6 border-l-4 border-[#33C5F3]">
-                  <p className="italic text-slate-300 leading-relaxed mb-4">"Voordat ik startte met rTMS waste ik mijn handen soms 6 uur per dag. Het beheerste mijn hele leven. Nu, na 25 sessies in de kliniek in Heiloo en doorzetten met de psycholoog, heb ik de dwang kunnen terugbrengen naar 20 minuutjes in de ochtend. Dat is een wonder voor mij."</p>
-                  <footer className="font-bold text-[#33C5F3]">— Pieter (34 jaar)</footer>
-                </blockquote>
-                <blockquote className="bg-white/5 p-6 border-l-4 border-[#33C5F3]">
-                  <p className="italic text-slate-300 leading-relaxed mb-4">"De verontrustende dwanggedachten raasden als een trein door mijn hoofd zonder remmen. rTMS voelde letterlijk alsof iemand eindelijk op de pauzeknop drukte. Een veilige behandeling waar je na een halfuurtje gewoon zelf weer voor wegrijdt."</p>
-                  <footer className="font-bold text-[#33C5F3]">— Sanne (29 jaar)</footer>
-                </blockquote>
-              </div>
-            </div>
-
+        {/* Gratis intake */}
+        <section className="py-20 bg-[#2b2e4a] text-white">
+          <div className="max-w-3xl mx-auto px-6 text-center">
+            <h2 className="text-3xl font-bold mb-6">Plan een gratis intake</h2>
+            <p className="text-slate-300 text-lg leading-relaxed mb-10">Tijdens een gratis consult bekijken we of rTMS passend kan zijn voor jouw situatie. Je krijgt in dit gesprek van 20 minuten met een arts persoonlijk advies en ruimte om vragen te stellen.</p>
+            <Link href="/aanmelden/" className="inline-block px-10 py-5 bg-[#33C5F3] text-white font-bold rounded-full hover:bg-[#29a5cd] transition shadow-lg text-lg">
+              Gratis intake aanvragen
+            </Link>
           </div>
         </section>
 
