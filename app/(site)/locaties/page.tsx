@@ -107,10 +107,10 @@ export default function LocatiesPage() {
               {/* Location Card: Heiloo */}
               <div className="group bg-white rounded-3xl overflow-hidden shadow-xl border border-slate-100 flex flex-col transition-all duration-300 hover:shadow-2xl hover:-translate-y-1">
                 <div className="h-64 relative overflow-hidden">
-                  <Image 
-                    src="/images/og-heiloo.png" 
-                    alt="rTMS Kliniek Heiloo" 
-                    fill 
+                  <Image
+                    src="/heilortmsbehandeling.jpeg"
+                    alt="rTMS Kliniek Heiloo"
+                    fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#2b2e4a]/80 to-transparent"></div>
