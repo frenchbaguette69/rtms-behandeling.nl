@@ -170,144 +170,79 @@ export default function BehandelingBurnout() {
           </div>
         </section>
 
-        {/* 2. Wat gebeurt er in uw hersenen bij burn-out? */}
-        <section className="py-24 bg-white border-b border-slate-100">
-          <div className="max-w-4xl mx-auto px-6">
-            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">Wat gebeurt er in uw hersenen bij burn-out?</h2>
+        {/* Herkenning */}
+        <section className="py-20 bg-white border-b border-slate-100">
+          <div className="max-w-3xl mx-auto px-6">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Herken je dit?</h2>
             <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
-            <p className="text-lg text-slate-600 leading-relaxed mb-6">
-              Een burn-out is geen teken van zwakte, maar een meetbare, biologische toestand van uitputting in het brein. Maanden - of zelfs jaren - van chronische stress zorgen ervoor dat het stress-systeem in uw hersenen (de HPA-as) permanent 'aan' blijft staan. 
-            </p>
-            <p className="text-lg text-slate-600 leading-relaxed">
-              Het gevolg is dat de <strong>prefrontale cortex</strong>—het deel van de hersenen dat logisch nadenken, concentratie en planning regelt—letterlijk uitgeput en onderactief raakt. Tegelijkertijd wordt uw emotiecentrum (de amygdala) hyperactief. Deze neurologische verstoring verklaart waarom u zich, ondanks talloze uren slapen of rusten, niet kunt herstellen. De fysiologische accu weigert opnieuw op te laden zonder ingrijpen van buitenaf.
-            </p>
+            <p className="text-lg text-slate-600 leading-relaxed">Heb je last van extreme vermoeidheid die na slapen niet verdwijnt, moeite met concentreren, of een gevoel van compleet leeg zijn? Misschien heb je al maanden vrij maar kom je toch niet bij, of merk je dat je geen energie hebt voor dingen die je vroeger normaal vond. Als die klachten maar niet verbeteren, dan kan een rTMS behandeling op maat mogelijk helpen.</p>
           </div>
         </section>
 
-        {/* 3. Hoe helpt rTMS bij burn-out klachten? */}
-        <section className="py-24 bg-slate-50">
-          <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
-            <div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">Hoe helpt rTMS bij burn-out klachten?</h2>
-              <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
-              
-              <p className="text-slate-600 leading-relaxed mb-6">
-                Gesprekstherapie is belangrijk voor het verwerken van stressoren, maar wanneer u zich in een zware burn-out bevindt dringen die gesprekken vaak niet eens door omdat u simpelweg de batterij ontbeert. Dit is waar Repetitieve Transcraniële Magnetische Stimulatie (rTMS) het verschil maakt.
-              </p>
-              
-              <p className="text-slate-600 leading-relaxed mb-8">
-                rTMS pakt de overbelasting bij de wortel aan. Door middel van pijnloze magnetische pulsen stimuleren wij de linker dorso-laterale prefrontale cortex. Dit verhoogt de lokale bloeddoorstroming en herstelt de afgezwaakte communicatie-netwerken. Uw hersenen worden weer geactiveerd om de 'vecht-of-vlucht' reflex te dempen. Zo ontstaat de neuro-biologische rust die nodig is om uw energiepeil daadwerkelijk weer op te bouwen.
-              </p>
-              
-              <div className="p-4 bg-white border-l-4 border-[#33C5F3] shadow-sm">
-                <span className="font-bold text-[#33C5F3] mb-1 block">Wetenschappelijk verklaard</span>
-                <p className="text-sm text-slate-600">rTMS herstelt de zogeheten 'neuroplasticiteit'. Het helpt het brein zichzelf weer bedraden en herstellen van de neurotoxische schade opgelopen door aanhoudende, verhoogde cortisolwaarden.</p>
-              </div>
-            </div>
-            
-            <div className="h-full min-h-[400px] bg-white border border-slate-200 shadow-sm flex flex-col justify-center items-center text-center p-6 relative">
-               <div className="w-full aspect-[4/3] bg-slate-100 flex items-center justify-center text-[#33C5F3] mb-6">
-                <FaBrain className="text-[120px]" />
-               </div>
-               <p className="text-sm text-slate-500 italic max-w-sm mx-auto">Figuur: Direct stimuleren van de prefrontale cortex geeft het brein terug de controle over chronische vermoeidheidssignalen.</p>
-            </div>
+        {/* Wat is rTMS */}
+        <section className="py-20 bg-slate-50 border-b border-slate-100">
+          <div className="max-w-3xl mx-auto px-6">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Wat is rTMS?</h2>
+            <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
+            <p className="text-lg text-slate-600 leading-relaxed">rTMS is een niet-invasieve behandeling waarbij zachte magnetische pulsen bepaalde gebieden in de hersenen stimuleren die bij een burn-out overbelast zijn geraakt. Tijdens de behandeling wordt een rTMS-spoel tegen het hoofd geplaatst. De behandeling doet geen pijn en je bent gewoon bij bewustzijn. Omdat iedere situatie anders is, wordt eerst bekeken of rTMS passend kan zijn voor jouw klachten.</p>
           </div>
         </section>
 
-        {/* 4. Symptomen waarbij rTMS kan helpen */}
-        <section className="py-24 bg-white border-t border-slate-100">
-          <div className="max-w-7xl mx-auto px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">Symptomen waarbij rTMS kan helpen</h2>
-              <div className="w-20 h-1 bg-[#33C5F3] mx-auto mb-8"></div>
-              <p className="text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto">
-                Burn-out is een cluster van uitputtingsklachten. rTMS is zeer doelgericht, maar het harmoniseert het hersennetwerk zodanig dat er verlichting ontstaat bij verschillende hoofdsymptomen:
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="bg-slate-50 p-6 border-t-[4px] border-[#33C5F3]">
-                <div className="w-10 h-10 bg-white shadow flex items-center justify-center rounded-full text-[#33C5F3] mb-4">
-                  <FaBatteryEmpty />
-                </div>
-                <h3 className="text-lg font-bold text-slate-900 mb-2">Chronische vermoeidheid</h3>
-                <p className="text-sm text-slate-600 leading-relaxed">Een zware, loodachtige vermoeidheid die ondanks lang rusten en slapen niet lijkt te verdwijnen.</p>
-              </div>
-              <div className="bg-slate-50 p-6 border-t-[4px] border-[#33C5F3]">
-                <div className="w-10 h-10 bg-white shadow flex items-center justify-center rounded-full text-[#33C5F3] mb-4">
-                  <FaExclamationTriangle />
-                </div>
-                <h3 className="text-lg font-bold text-slate-900 mb-2">Concentratieproblemen</h3>
-                <p className="text-sm text-slate-600 leading-relaxed">'Wattenhoofd' of brain-fog, een sterke prikkelgevoeligheid en falend kortetermijngeheugen.</p>
-              </div>
-              <div className="bg-slate-50 p-6 border-t-[4px] border-[#33C5F3]">
-                <div className="w-10 h-10 bg-white shadow flex items-center justify-center rounded-full text-[#33C5F3] mb-4">
-                  <FaChartLine />
-                </div>
-                <h3 className="text-lg font-bold text-slate-900 mb-2">Emotionele uitputting</h3>
-                <p className="text-sm text-slate-600 leading-relaxed">Apathie, plotselinge huilbuien, cynisme en een onverklaarbare leegte en vervreemding van werk en privé.</p>
-              </div>
-              <div className="bg-slate-50 p-6 border-t-[4px] border-[#33C5F3]">
-                <div className="w-10 h-10 bg-white shadow flex items-center justify-center rounded-full text-[#33C5F3] mb-4">
-                  <FaBed />
-                </div>
-                <h3 className="text-lg font-bold text-slate-900 mb-2">Slaapproblemen</h3>
-                <p className="text-sm text-slate-600 leading-relaxed">Constant 'aan' staan in het hoofd resulterend in niet kunnen inslapen of ontwaken in paniek.</p>
-              </div>
-            </div>
+        {/* Waarom overwegen */}
+        <section className="py-20 bg-white border-b border-slate-100">
+          <div className="max-w-3xl mx-auto px-6">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Waarom mensen rTMS overwegen</h2>
+            <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
+            <p className="text-slate-600 mb-6">Deze behandeling is voor je wanneer je:</p>
+            <ul className="space-y-4">
+              {[
+                'al langere tijd in een burn-out zit en merkt dat rust alleen onvoldoende helpt',
+                "last hebt van 'watten in het hoofd', vergeetachtigheid of concentratieproblemen",
+                'emotioneel uitgeput bent en je zelfs kleine dingen te veel worden',
+                'op zoek bent naar een behandeling zonder medicatie',
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-3 text-slate-600">
+                  <span className="w-2 h-2 rounded-full bg-[#33C5F3] mt-2 shrink-0"></span>
+                  {item}
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
 
-        {/* 5. rTMS bij burn-out gecombineerd met begeleiding */}
-        <section className="py-24 bg-slate-50">
-          <div className="max-w-4xl mx-auto px-6 text-center">
-            <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center text-3xl mx-auto mb-6 shadow-sm border border-slate-100 text-[#33C5F3]">
-              <FaHandHoldingHeart />
-            </div>
-            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">rTMS bij burn-out gecombineerd met begeleiding</h2>
-            <div className="w-20 h-1 bg-[#33C5F3] mx-auto mb-10"></div>
-            <p className="text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto mb-6">
-              Burn-out voorkomen voor de toekomst vereist nieuwe gedragspatronen. Hoe bewaakt u uw grenzen? Hoe gaat u om met toxische druk op werk? Daar antwoorden op formuleren kan alleen als de geestelijke brandstof weer enigszins is aangevuld. 
-            </p>
-            <p className="text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto font-medium">
-              Wij pleiten bij burn-out patiënten dan ook altijd primair voor de magneetstimulatie, in combinatie met daaraan parallel lopende of direct opvolgende cognitieve gedragstherapie of re-integratiebegeleiding. Wat we opbouwen op neuraal niveau zult u door counseling eigen moeten maken in uw dagelijks functioneren.
-            </p>
+        {/* Wat je kunt verwachten */}
+        <section className="py-20 bg-slate-50 border-b border-slate-100">
+          <div className="max-w-3xl mx-auto px-6">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Wat je kunt verwachten</h2>
+            <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
+            <ul className="space-y-4">
+              {[
+                'Behandeling zonder medicatie',
+                'Behandelplan afgestemd op jouw situatie',
+                'Meer mentale energie en helderheid',
+                'Betere nachtrust en minder prikkelgevoeligheid',
+              ].map((item, i) => (
+                <li key={i} className="flex items-center gap-3 text-slate-700 font-medium">
+                  <span className="text-[#33C5F3] text-xl">✓</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
 
-        {/* 6. Vergoeding bij burn-out & 7. Ervaringen */}
-        <section className="py-24 bg-[#2b2e4a] text-white">
-          <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16">
-            
-            <div className="bg-white/5 border border-white/10 p-10 relative overflow-hidden flex flex-col justify-center">
-               <div className="w-12 h-12 bg-[#33C5F3] flex items-center justify-center text-white rounded-full mb-6 text-2xl"><FaUserShield /></div>
-               <h2 className="text-3xl lg:text-4xl font-bold mb-6">Vergoeding bij burn-out</h2>
-               <p className="text-slate-300 text-lg leading-relaxed mb-6">
-                 Een exclusieve diagnose "Burn-out" (ofwel overspanning gerelateerd aan de werksituatie) valt sinds 2012 buiten de vergoede basisvoorziening GGZ in Nederland. Derhalve is er op basis van enkel het label burn-out geen dekking door zorgverzekeraars.
-               </p>
-               <p className="text-slate-300 text-lg leading-relaxed font-bold">
-                Crossover: Vaak is er na langdurige uitputting echter een volwaardige <strong>depressieve stoornis</strong> ontstaan. Zodra onze psychiater de diagnose 'therapieresistente depressie' stelt als kernprobleem (welke mogelijk voortvloeit uit initiële burn-out klachten), wordt het standaard rTMS protocol veelal wél vergoed. 
-               </p>
-            </div>
-
-            <div>
-              <h2 className="text-3xl font-bold mb-8">Ervaringen van patiënten met burn-out</h2>
-              <div className="space-y-6">
-                <blockquote className="bg-white/5 p-6 border-l-4 border-[#33C5F3]">
-                  <p className="italic text-slate-300 leading-relaxed mb-4">"Na een jaar in de ziektewet had ik het gevoel dat mijn batterij permanent op 5% bleef hangen, ondanks wekelijkse psycholoogbezoeken. Toen ik met rTMS begon kreeg ik in week 3 ineens de energie terug om weer simpele dingen op te pakken zoals koken. De opwaartse spiraal kon eindelijk beginnen."</p>
-                  <footer className="font-bold text-[#33C5F3]">— Karin (39 jaar, docent)</footer>
-                </blockquote>
-                <blockquote className="bg-white/5 p-6 border-l-4 border-[#33C5F3]">
-                  <p className="italic text-slate-300 leading-relaxed mb-4">"De zware 'mist' in mijn hoofd was na 15 rTMS sessies grotendeels opgetrokken. Kon eindelijk weer fatsoenlijk beslissingen nemen zonder direct in de onrust en paniek te schieten."</p>
-                  <footer className="font-bold text-[#33C5F3]">— Thomas (51 jaar, projectmanager)</footer>
-                </blockquote>
-              </div>
-            </div>
-
+        {/* Gratis intake */}
+        <section className="py-20 bg-[#2b2e4a] text-white">
+          <div className="max-w-3xl mx-auto px-6 text-center">
+            <h2 className="text-3xl font-bold mb-6">Plan een gratis intake</h2>
+            <p className="text-slate-300 text-lg leading-relaxed mb-10">Tijdens een gratis consult bekijken we of rTMS passend kan zijn voor jouw situatie. Je krijgt in dit gesprek van 20 minuten met een arts persoonlijk advies en ruimte om vragen te stellen.</p>
+            <Link href="/aanmelden/" className="inline-block px-10 py-5 bg-[#33C5F3] text-white font-bold rounded-full hover:bg-[#29a5cd] transition shadow-lg text-lg">
+              Gratis intake aanvragen
+            </Link>
           </div>
         </section>
 
-        {/* 8. Veelgestelde vragen */}
+                {/* 8. Veelgestelde vragen */}
         <section className="py-24 bg-white border-t border-slate-100">
           <div className="max-w-4xl mx-auto px-6">
             <div className="text-center mb-12">

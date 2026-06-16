@@ -166,124 +166,75 @@ export default function BehandelingPtss() {
           </div>
         </section>
 
-        {/* 2. Wat is PTSS en hoe beïnvloedt het de hersenen? */}
-        <section className="py-24 bg-white border-b border-slate-100">
-          <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-start">
-            
-            <div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">Wat is PTSS en hoe beïnvloedt het de hersenen?</h2>
-              <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
-              <p className="text-lg text-slate-600 leading-relaxed mb-6">
-                Een Posttraumatische Stressstoornis (PTSS) is geen teken van psychische zwakte, maar eerder een fysiologische 'beschadiging' in het alarmsysteem van uw brein. Na een levensbedreigende, schokkende of langdurig onveilige situatie hebben de hersenen geleerd dat de wereld permanent gevaarlijk is.
-              </p>
-              <p className="text-lg text-slate-600 leading-relaxed">
-                Klinisch gezien zien we bij patiënten met complex trauma dat de <strong>amygdala</strong> (verantwoordelijk voor het genereren van een paniekreactie) veel te groot of chronisch hyperactief is. Tegelijkertijd is de dempende kracht van de <strong>prefrontale cortex</strong> (die logisch redeneren en emotieregulatie aanstuurt) door de aanhoudende stress juist verzwakt. U bevindt zich hierdoor in een permanente staat van <em>hyperarousal</em>.
-              </p>
-            </div>
-
-            <div className="bg-slate-50 p-10 border-l-[6px] border-[#33C5F3] relative object-cover h-full">
-               <div className="absolute top-0 right-0 p-6 text-slate-200"><FaBrain className="text-9xl" /></div>
-               <div className="relative z-10">
-                 <h2 className="text-3xl font-bold text-slate-900 mb-6">Fysieke Symptomen</h2>
-                 <p className="text-slate-600 leading-relaxed mb-6">
-                   Hierdoor ervaart u hevige, vaak oncontroleerbare symptomen: constante schrikachtigheid, prikkelbaarheid, zware nachtmerries, dissociatie ('er even niet zijn') en hartkloppingen. Uw zenuwstelsel reageert op een dichtslaande deur alsof u zich midden in het trauma van vroeger bevindt.
-                 </p>
-               </div>
-            </div>
-
+        {/* Herkenning */}
+        <section className="py-20 bg-white border-b border-slate-100">
+          <div className="max-w-3xl mx-auto px-6">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Herken je dit?</h2>
+            <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
+            <p className="text-lg text-slate-600 leading-relaxed">Heb je last van herbelevingen, nachtmerries of een constant gevoel van alertheid dat niet weggaat? Misschien schrik je snel op, vermijd je bepaalde situaties of mensen, of voel je je innerlijk nooit echt veilig. Als die klachten blijven aanhouden en je te weinig vooruitkomt met bestaande behandelingen, dan kan een rTMS behandeling op maat mogelijk helpen.</p>
           </div>
         </section>
 
-        {/* 3. Hoe werkt rTMS bij PTSS? / 4. Voordelen ten opzichte van traditionele traumatherapie */}
-        <section className="py-24 bg-slate-50">
-          <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
-            
-            <div className="h-full min-h-[440px] bg-white border border-slate-200 shadow-sm flex flex-col justify-center items-center text-center p-6 relative">
-               <div className="w-full aspect-[4/3] bg-slate-100 flex items-center justify-center text-[#33C5F3] mb-6">
-                <FaEyeSlash className="text-[120px]" />
-               </div>
-               <p className="text-sm text-slate-500 italic max-w-sm mx-auto">Figuur: Een fundamenteel voordeel: de biologische rem op angst, zónder de cognitieve verplichting de pijn actief te moeten herbeleven.</p>
-            </div>
-
-            <div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">Voordelen boven traditionele traumatherapie</h2>
-              <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
-              
-              <p className="text-slate-600 leading-relaxed mb-6">
-                Psychologische traumatherapie vereist bijna altijd dat de patiënt het diepste leed bespreekt, opschrijft of visualiseert. Denk aan EMDR, Imaginaire Exposure (IE) of NET. Hoewel effectief op lange termijn, leidt deze blootstelling bij velen tot tijdelijke hertraumatisering, extreme emotionele overspoeling en uitval.
-              </p>
-
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Hoe grijpt rTMS in bij PTSS?</h3>
-              <p className="text-slate-600 leading-relaxed mb-4">
-                <strong>1. Medicatievrije stabilisatie:</strong> rTMS is in staat uw emotieregulatie-netwerken biologisch te versterken en de amygdala te kalmeren door middel van gerichte magnetische pulsen.
-              </p>
-              <p className="text-slate-600 leading-relaxed mb-6">
-                <strong>2. Vermijden van herbelevingen:</strong> Omdat we de schedel mechanisch stimuleren, is verbale activering onnodig. U hoeft tijdens de twintig minuten durende behandelingssessies in de veilige, rustige stoel <em>niet</em> te praten over de traumatiserende gebeurtenissen. We herstructureren het paniekraamwerk in alle veiligheid.
-              </p>
-
-            </div>
-
+        {/* Wat is rTMS */}
+        <section className="py-20 bg-slate-50 border-b border-slate-100">
+          <div className="max-w-3xl mx-auto px-6">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Wat is rTMS?</h2>
+            <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
+            <p className="text-lg text-slate-600 leading-relaxed">rTMS is een niet-invasieve behandeling waarbij zachte magnetische pulsen bepaalde gebieden in de hersenen stimuleren die bij PTSS overactief zijn geworden. Tijdens de behandeling word je niet gevraagd over het trauma te praten. De behandeling doet geen pijn en je bent gewoon bij bewustzijn. Omdat iedere situatie anders is, wordt eerst bekeken of rTMS passend kan zijn voor jouw klachten.</p>
           </div>
         </section>
 
-        {/* 5. Combinatie met EMDR of traumagerichte CGT */}
-        <section className="py-24 bg-white border-t border-slate-100">
-          <div className="max-w-4xl mx-auto px-6 text-center">
-            <div className="w-16 h-16 rounded-full bg-slate-50 flex items-center justify-center text-3xl mx-auto mb-6 text-[#33C5F3]">
-              <FaHandHoldingHeart />
-            </div>
-            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-6">De ideale bodem: rTMS + EMDR</h2>
-            <div className="w-20 h-1 bg-[#33C5F3] mx-auto mb-10"></div>
-            <p className="text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto mb-6">
-              Veel van onze patiënten zijn bij ons beland nadat een eerdere EMDR- of Exposure-therapie voortijdig is afgebroken, omdat zij "buiten de <em>Window of Tolerance</em>" sloegen en hevig dissocieerden. 
-            </p>
-            <p className="text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto font-medium">
-              Wij zien rTMS dan ook niet per se als vervanging van psychotherapie, maar als de ultieme, veilige voorbereider. Door de hyperarousal fysiek te reduceren middels magneetstimulatie, creëren we ruimte in uw hoofd. Vervolgens kan onze gespecialiseerde therapeut (indien u dit wenst) de EMDR parallel opstarten. Met de hervonden biologische rem wordt de verwerking zo ontzettend veel kansrijker en draaglijker.
-            </p>
+        {/* Waarom overwegen */}
+        <section className="py-20 bg-white border-b border-slate-100">
+          <div className="max-w-3xl mx-auto px-6">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Waarom mensen rTMS overwegen</h2>
+            <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
+            <p className="text-slate-600 mb-6">Deze behandeling is voor je wanneer je:</p>
+            <ul className="space-y-4">
+              {[
+                'al eerder therapie hebt geprobeerd (zoals EMDR) maar dit te zwaar of te overweldigend vond',
+                'merkt dat je systeem altijd \'aan\' staat en je nooit echt tot rust komt',
+                'last hebt van slaapproblemen, herbeleving of emotionele uitbarstingen',
+                'een veilige behandeling zoekt waarbij je niet opnieuw het trauma hoeft op te halen',
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-3 text-slate-600">
+                  <span className="w-2 h-2 rounded-full bg-[#33C5F3] mt-2 shrink-0"></span>
+                  {item}
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
 
-        {/* 6. Is rTMS bij PTSS vergoed? / 7. Ervaringen / 8. Bewijs */}
-        <section className="py-24 bg-[#2b2e4a] text-white">
-          <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16">
-            
-            <div className="space-y-16">
-               <div>
-              <h2 className="text-3xl font-bold mb-8">Ervaringen van patiënten</h2>
-              <div className="space-y-6">
-                <blockquote className="bg-white/5 p-6 border-l-4 border-[#33C5F3]">
-                  <p className="italic text-slate-300 leading-relaxed mb-4">"Alle eerdere praat-therapieën brachten me alleen maar maandenlang terug in nachtmerries. De rTMS was zo... rustig. Ik mocht simpelweg zitten. Binnen drie weken voelde mijn hart rustiger kloppen. Enorm verlichtend."</p>
-                  <footer className="font-bold text-[#33C5F3]">— Maria (41 jaar)</footer>
-                </blockquote>
-                <blockquote className="bg-white/5 p-6 border-l-4 border-[#33C5F3]">
-                  <p className="italic text-slate-300 leading-relaxed mb-4">"Mijn systeem was na mijn jeugdtrauma's in een freeze-stand vastgezet. Ik was alleen maar verdoofd of in complete paniek. rTMS was stap 1 om mezelf überhaupt sterk genoeg te voelen voor de uiteindelijke EMDR-sessies."</p>
-                  <footer className="font-bold text-[#33C5F3]">— Robert (37 jaar)</footer>
-                </blockquote>
-              </div>
-            </div>
+        {/* Wat je kunt verwachten */}
+        <section className="py-20 bg-slate-50 border-b border-slate-100">
+          <div className="max-w-3xl mx-auto px-6">
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Wat je kunt verwachten</h2>
+            <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
+            <ul className="space-y-4">
+              {[
+                'Behandeling zonder het trauma opnieuw te hoeven bespreken',
+                'Behandelplan afgestemd op jouw situatie',
+                'Meer innerlijke rust en minder overstimulatie',
+                'Betere nachtrust en meer gevoel van veiligheid',
+              ].map((item, i) => (
+                <li key={i} className="flex items-center gap-3 text-slate-700 font-medium">
+                  <span className="text-[#33C5F3] text-xl">✓</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
 
-            </div>
-
-            <div className="space-y-16">
-               <div className="bg-white/5 border border-white/10 p-10 relative overflow-hidden flex flex-col justify-center">
-                  <div className="w-12 h-12 bg-[#33C5F3] flex items-center justify-center text-white rounded-full mb-6 text-2xl"><FaUserShield /></div>
-                  <h2 className="text-3xl font-bold mb-6">Is rTMS bij PTSS vergoed?</h2>
-                  <p className="text-slate-300 leading-relaxed mb-6">
-                    De inzet van rTMS bij pure trauma indicaties vraagt om zorgvuldige beoordeling door onze psychiater. Gelukkig gaat langdurige PTSS nagenoeg altijd hand in hand met secundaire, zware depressieve episodes. Voldoet u daardoor aan de DSM-5 kenmerken van <strong>therapieresistente depressie</strong>, dan is vergoeding binnen de Nederlandse basisverzekering vaak goed mogelijk. 
-                  </p>
-                  <Link href="/vergoeding-kosten/" className="text-[#33C5F3] font-bold uppercase tracking-wider text-sm flex items-center gap-2 hover:text-white transition-colors">
-                    Zie onze vergoedingsstructuur <FaChevronDown className="rotate-[-90deg]" />
-                  </Link>
-               </div>
-
-               <div>
-                 <h2 className="text-3xl font-bold mb-6 flex items-center gap-4"><FaShieldAlt className="text-[#33C5F3]" /> Wetenschappelijk bewijs</h2>
-                 <p className="text-slate-300 leading-relaxed mb-4">
-                   Nieuwe, decennialange studies tonen overtuigend aan dat hoogfrequente rTMS op de rechter dorsolaterale prefrontale cortex (rDLPFC) een krachtige, robuuste daling in PTSS scores (CAPS) oplevert, vergelijkbaar met of overstijgend ten opzichte van paroxetine (een veelvoorgeschreven medicijn—met aanzienlijk minder bijwerkingen). 
-                 </p>
-               </div>
-            </div>
-
+        {/* Gratis intake */}
+        <section className="py-20 bg-[#2b2e4a] text-white">
+          <div className="max-w-3xl mx-auto px-6 text-center">
+            <h2 className="text-3xl font-bold mb-6">Plan een gratis intake</h2>
+            <p className="text-slate-300 text-lg leading-relaxed mb-10">Tijdens een gratis consult bekijken we of rTMS passend kan zijn voor jouw situatie. Je krijgt in dit gesprek van 20 minuten met een arts persoonlijk advies en ruimte om vragen te stellen.</p>
+            <Link href="/aanmelden/" className="inline-block px-10 py-5 bg-[#33C5F3] text-white font-bold rounded-full hover:bg-[#29a5cd] transition shadow-lg text-lg">
+              Gratis intake aanvragen
+            </Link>
           </div>
         </section>
 
