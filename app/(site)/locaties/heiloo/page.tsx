@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { FaMapMarkerAlt, FaCar, FaTrain, FaParking, FaPhoneAlt, FaEnvelope, FaClock, FaChevronRight, FaWhatsapp } from 'react-icons/fa';
 
 export const metadata: Metadata = {
@@ -102,7 +103,7 @@ export default function LocatieHeiloo() {
         {/* 1. Hero */}
         <section className="relative w-full min-h-[60vh] flex flex-col justify-center py-20 pb-24 overflow-hidden">
           <div className="absolute inset-0 bg-[#2b2e4a] mix-blend-multiply opacity-60 z-10"></div>
-          <div className="absolute inset-0 bg-[url('/images/og-heiloo.png')] bg-cover bg-center bg-no-repeat z-0 transform scale-105"></div>
+          <div className="absolute inset-0 bg-[url('/heilortmsbehandeling.jpeg')] bg-cover bg-center bg-no-repeat z-0 transform scale-105"></div>
           
           <div className="relative z-20 max-w-7xl mx-auto px-6 w-full text-center mt-12">
             <h1 className="text-4xl md:text-5xl lg:text-[4rem] font-bold text-white leading-tight tracking-tight mb-8 max-w-5xl mx-auto drop-shadow-md">
@@ -275,6 +276,33 @@ export default function LocatieHeiloo() {
 
               </div>
            </div>
+        </section>
+
+        {/* 5b. Behandeling foto */}
+        <section className="py-24 bg-white border-b border-slate-100">
+          <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+            <div className="relative h-80 rounded-lg overflow-hidden shadow-md">
+              <Image
+                src="/rtmsbehandeling1.png"
+                alt="rTMS behandeling sessie in Heiloo"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div>
+              <h2 className="text-3xl font-bold text-slate-900 mb-6">Hoe ziet een sessie eruit?</h2>
+              <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
+              <p className="text-lg text-slate-600 leading-relaxed mb-4">
+                U zit comfortabel in een behandelstoel terwijl onze specialist de rTMS-spoel nauwkeurig positioneert. Een sessie duurt gemiddeld 20 tot 45 minuten.
+              </p>
+              <p className="text-lg text-slate-600 leading-relaxed mb-8">
+                Na afloop kunt u direct naar huis. Autorijden is toegestaan. Veel patiënten combineren de behandeling gewoon met hun dagelijks leven.
+              </p>
+              <Link href="/behandelproces/" className="inline-flex items-center gap-2 text-[#33C5F3] font-bold hover:text-[#29a5cd] transition-colors">
+                Lees meer over het behandelproces <FaChevronRight className="text-[10px]" />
+              </Link>
+            </div>
+          </div>
         </section>
 
         {/* 6. Een intake aanvragen in Heiloo (Block CTA) */}

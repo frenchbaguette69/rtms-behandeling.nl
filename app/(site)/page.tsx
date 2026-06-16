@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { FaBrain, FaSadTear, FaHeartbeat, FaSyncAlt, FaCloud, FaBatteryQuarter, FaBell, FaStar, FaPhoneAlt, FaWhatsapp } from 'react-icons/fa';
 
 export const metadata: Metadata = {
@@ -215,12 +216,13 @@ export default function Homepage() {
                 <span className="font-bold text-slate-900 group-hover:text-[#33C5F3]">Wat is rTMS?</span>
               </Link>
             </div>
-            <div className="w-full aspect-square bg-slate-100 flex items-center justify-center relative overflow-hidden">
-               {/* Illustratie hersenen placeholder */}
-               <div className="text-center">
-                <span className="block text-6xl mb-4 text-[#33C5F3]"><FaBrain className="mx-auto" /></span>
-                <span className="text-slate-400 font-medium tracking-wide border-t border-slate-300 pt-2 inline-block">[Illustratie Hersenen]</span>
-              </div>
+            <div className="w-full aspect-square relative overflow-hidden rounded-lg shadow-md">
+              <Image
+                src="/rtmsbehandeling1.png"
+                alt="rTMS behandeling sessie"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </section>
@@ -267,8 +269,21 @@ export default function Homepage() {
         {/* 5. Behandelproces (Clean Horizontal Tijdlijn) */}
         <section className="py-32 bg-white border-t border-slate-100">
           <div className="max-w-7xl mx-auto px-6">
-            <h2 className="text-4xl md:text-5xl font-bold text-center text-slate-900 mb-6 tracking-tight">Hoe werkt de rTMS behandeling?</h2>
-            <div className="w-20 h-1 bg-[#33C5F3] mx-auto mb-20"></div>
+            <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
+              <div>
+                <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 tracking-tight">Hoe werkt de rTMS behandeling?</h2>
+                <div className="w-20 h-1 bg-[#33C5F3] mb-8"></div>
+                <p className="text-lg text-slate-600 leading-relaxed">Elke sessie duurt gemiddeld 20 tot 45 minuten. U zit comfortabel in een stoel terwijl de spoel op de juiste positie wordt geplaatst. Na de behandeling kunt u direct naar huis — autorijden is toegestaan.</p>
+              </div>
+              <div className="relative h-72 rounded-lg overflow-hidden shadow-md">
+                <Image
+                  src="/rtmsbehandeling2.png"
+                  alt="rTMS behandeling apparatuur"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
             
             <div className="relative">
               {/* Connecting line (desktop) */}
@@ -324,10 +339,13 @@ export default function Homepage() {
             <div className="grid md:grid-cols-2 gap-16">
               {/* Heiloo */}
               <div className="group flex flex-col">
-                <div className="h-64 bg-slate-200 w-full mb-8 relative overflow-hidden">
-                  <div className="absolute inset-0 flex items-center justify-center border-b-[6px] border-[#33C5F3]">
-                    <span className="text-slate-500 font-bold uppercase tracking-widest text-sm">[Foto Locatie Heiloo]</span>
-                  </div>
+                <div className="h-64 w-full mb-8 relative overflow-hidden border-b-[6px] border-[#33C5F3]">
+                  <Image
+                    src="/heilortmsbehandeling.jpeg"
+                    alt="rTMS Kliniek Heiloo"
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
                 </div>
                 <h3 className="text-3xl font-bold text-slate-900 mb-4">Locatie Heiloo</h3>
                 <div className="text-slate-600 mb-8 space-y-3 flex-1 text-lg">
