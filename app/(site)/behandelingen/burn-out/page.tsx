@@ -155,12 +155,11 @@ export default function BehandelingBurnout() {
           
           <div className="relative z-20 max-w-7xl mx-auto px-6 w-full text-center">
             <h1 className="text-4xl md:text-5xl lg:text-[4rem] font-bold text-white leading-tight tracking-tight mb-8 max-w-5xl mx-auto drop-shadow-md">
-              rTMS bij Burn-out — <br className="hidden md:block" />
-              Herstelbehandeling voor overbelaste hersenen
+              rTMS bij Burn-out
             </h1>
             <div className="w-20 h-1 bg-[#33C5F3] mx-auto mb-8"></div>
             <p className="text-white/90 text-xl md:text-2xl font-medium max-w-3xl mx-auto leading-relaxed mb-10 drop-shadow-sm">
-              Doorbreek de extreme vermoeidheid en cognitieve uitputting veilige, gerichte magneetstimulatie. Geef uw zenuwstelsel de reset die het nodig heeft.
+              Heb je het gevoel dat je accu leeg is en niet meer oplaadt?
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-6">
               <Link href="/aanmelden/" className="flex justify-center items-center px-10 py-5 bg-[#33C5F3] text-white rounded-full font-bold hover:bg-[#29a5cd] transition shadow-lg text-lg">

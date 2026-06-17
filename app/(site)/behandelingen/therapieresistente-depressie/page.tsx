@@ -151,12 +151,11 @@ export default function BehandelingTRD() {
           
           <div className="relative z-20 max-w-7xl mx-auto px-6 w-full text-center">
             <h1 className="text-4xl md:text-5xl lg:text-[4rem] font-bold text-white leading-tight tracking-tight mb-8 max-w-5xl mx-auto drop-shadow-md">
-              Therapieresistente Depressie — <br className="hidden md:block" />
-              rTMS als bewezen alternatief
+              rTMS bij Therapieresistente Depressie
             </h1>
             <div className="w-20 h-1 bg-[#33C5F3] mx-auto mb-8"></div>
             <p className="text-white/90 text-xl md:text-2xl font-medium max-w-3xl mx-auto leading-relaxed mb-10 drop-shadow-sm">
-              Slaan pillen niet aan en stagneert praattherapie? Ontdek de medisch erkende, maximaal vergoede behandeling die de biologie van uw brein herstelt.
+              Heb je al meerdere behandelingen geprobeerd maar kom je toch niet vooruit?
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-6">
               <Link href="/aanmelden/" className="flex justify-center items-center px-10 py-5 bg-[#33C5F3] text-white rounded-full font-bold hover:bg-[#29a5cd] transition shadow-lg text-lg">
