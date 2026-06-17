@@ -151,12 +151,11 @@ export default function BehandelingPtss() {
           
           <div className="relative z-20 max-w-7xl mx-auto px-6 w-full text-center">
             <h1 className="text-4xl md:text-5xl lg:text-[4rem] font-bold text-white leading-tight tracking-tight mb-8 max-w-5xl mx-auto drop-shadow-md">
-              rTMS bij PTSS — <br className="hidden md:block" />
-              Verlichting van traumaklachten zonder herbelevingen
+              rTMS bij PTSS
             </h1>
             <div className="w-20 h-1 bg-[#33C5F3] mx-auto mb-8"></div>
             <p className="text-white/90 text-xl md:text-2xl font-medium max-w-3xl mx-auto leading-relaxed mb-10 drop-shadow-sm">
-              Een veilige, medicatievrije methode die de acute onrust in uw lichaam en geest remt, zónder dat u uw pijnlijke herinneringen hoeft op te rakelen.
+              Heb je last van trauma dat je maar niet achter je kunt laten?
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-6">
               <Link href="/aanmelden/" className="flex justify-center items-center px-10 py-5 bg-[#33C5F3] text-white rounded-full font-bold hover:bg-[#29a5cd] transition shadow-lg text-lg">
