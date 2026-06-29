@@ -273,7 +273,7 @@ export default function Homepage() {
               <div>
                 <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 tracking-tight">Hoe werkt de rTMS behandeling?</h2>
                 <div className="w-20 h-1 bg-[#33C5F3] mb-8"></div>
-                <p className="text-lg text-slate-600 leading-relaxed">Elke sessie duurt gemiddeld 20 tot 45 minuten. U zit comfortabel in een stoel terwijl de spoel op de juiste positie wordt geplaatst. Na de behandeling kunt u direct naar huis. Autorijden is toegestaan.</p>
+                <p className="text-lg text-slate-600 leading-relaxed">Elke sessie duurt gemiddeld 20 tot 45 minuten. Je zit comfortabel in een stoel terwijl de spoel op de juiste positie wordt geplaatst. Na de behandeling kun je direct naar huis. Autorijden is toegestaan.</p>
               </div>
               <div className="relative h-72 rounded-lg overflow-hidden shadow-md">
                 <Image
@@ -314,9 +314,9 @@ export default function Homepage() {
         <section className="py-20 bg-[#33C5F3] text-white">
           <div className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-10">
             <div className="lg:w-2/3">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-4 tracking-tight">Vergoed door uw zorgverzekering</h2>
+              <h2 className="text-3xl lg:text-4xl font-bold mb-4 tracking-tight">Vergoed door jouw zorgverzekering</h2>
               <p className="text-white/90 text-lg leading-relaxed">
-                Heeft u een verwijzing en betreft het therapieresistente depressie? Dan wordt de behandeling door vrijwel elke Nederlandse basisverzekering (GGZ) vergoed.
+                Heb je een verwijzing en betreft het therapieresistente depressie? Dan wordt de behandeling door vrijwel elke Nederlandse basisverzekering (GGZ) vergoed.
               </p>
             </div>
             <div>
@@ -368,6 +368,7 @@ export default function Homepage() {
                 <div className="text-slate-600 mb-8 space-y-3 flex-1 text-lg">
                   <p className="flex items-center gap-3"><span className="text-xl text-[#33C5F3]">📍</span> Boeing Avenue 8, 1119 PB Schiphol-Rijk</p>
                   <p className="flex items-center gap-3"><span className="text-xl text-[#33C5F3]">✈️</span> Centraal naast de A4</p>
+                  <p className="flex items-center gap-3"><span className="text-xl text-[#33C5F3]">🚗</span> Gratis parkeren beschikbaar</p>
                 </div>
                 <Link href="/locaties/schiphol-rijk/" className="text-[#33C5F3] font-bold tracking-wide hover:text-[#29a5cd] transition-colors inline-block uppercase text-sm">
                   Onze locatie bij Schiphol
@@ -449,7 +450,7 @@ export default function Homepage() {
               <div className="max-w-2xl">
                 <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 tracking-tight">Ontmoet ons team</h2>
                 <div className="w-20 h-1 bg-[#33C5F3] mb-6"></div>
-                <p className="text-lg text-slate-600">Onze BIG-geregistreerde psychiaters, psychologen en rTMS-technici zorgen voor uw herstel.</p>
+                <p className="text-lg text-slate-600">Onze BIG-geregistreerde psychiaters, psychologen en rTMS-technici zorgen voor jouw herstel.</p>
               </div>
               <Link href="/team/" className="text-[#33C5F3] font-bold tracking-wide hover:text-[#29a5cd] transition-colors inline-block uppercase text-sm mb-4">
                 Bekijk alle specialisten →
@@ -502,7 +503,7 @@ export default function Homepage() {
           <div className="max-w-4xl mx-auto px-6 text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-8">Klaar voor de eerste stap?</h2>
             <p className="text-xl text-slate-300 mb-12 leading-relaxed max-w-2xl mx-auto">
-              Ervaar zelf wat de innovatieve behandeling van rTMS voor uw mentale gezondheid kan betekenen. Neem vrijblijvend contact op.
+              Ervaar zelf wat de innovatieve behandeling van rTMS voor jouw mentale gezondheid kan betekenen. Neem vrijblijvend contact op.
             </p>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
               <Link href="/aanmelden/" className="px-10 py-5 bg-[#33C5F3] text-white rounded-full font-bold text-lg hover:bg-[#29a5cd] transition-colors shadow-lg w-full sm:w-auto text-center">
