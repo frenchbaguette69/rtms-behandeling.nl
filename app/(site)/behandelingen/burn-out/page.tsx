@@ -107,7 +107,7 @@ const burnoutSchema = [
         "name": "Zal rTMS mijn slaap verbeteren?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Slaapproblemen zijn een kernelement van burn-out door de ontregelde stress-as (HPA-as). Omdat rTMS gericht is op het herstellen van de emotieregulatie en het verlagen van de constante hyperarousal, rapporteren veel patiënten na enkele weken een betere slaapkwaliteit."
+          "text": "Slaapproblemen komen vaak voor bij een burn-out. Door langdurige stress blijft het lichaam als het ware in de 'aan-stand' staan, waardoor ontspannen en goed slapen moeilijker wordt. Omdat rTMS helpt om meer rust en balans in de hersenen te brengen, merken veel mensen na enkele weken dat ze beter slapen en uitgeruster wakker worden."
         }
       },
       {
@@ -190,9 +190,9 @@ export default function BehandelingBurnout() {
         {/* Waarom overwegen */}
         <section className="py-20 bg-white border-b border-slate-100">
           <div className="max-w-3xl mx-auto px-6">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">Waarom mensen rTMS overwegen</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Waarom mensen rTMS overwegen bij burn-out</h2>
             <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
-            <p className="text-slate-600 mb-6">Deze behandeling is voor je wanneer je:</p>
+            <p className="text-slate-600 mb-6">Deze behandeling is voor jou wanneer je:</p>
             <ul className="space-y-4">
               {[
                 'al langere tijd in een burn-out zit en merkt dat rust alleen onvoldoende helpt',

@@ -99,7 +99,7 @@ const anxietySchema = [
         "name": "Wat is het verschil tussen rTMS voor depressie en voor angst?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Bij depressie stimuleren we vaak de linker hersenhelft (hoogfrequent) om onderactieve netwerken te activeren. Bij angstklachten gebruiken we meestal laagfrequente pulsen aan de rechterzijde om de overactieve, angst-producerende netwerken (zoals de hyperactieve amygdala) juist te kalmeren."
+          "text": "Bij depressieve klachten richten we ons vaak op het stimuleren van hersengebieden die minder actief zijn dan normaal. Zo proberen we netwerken die betrokken zijn bij stemming en motivatie weer actiever te maken. Bij angstklachten doen we juist vaak het tegenovergestelde: dan proberen we bepaalde hersengebieden die te actief zijn te kalmeren. Hierdoor kunnen gevoelens van spanning, onrust en angst afnemen."
         }
       },
       {
@@ -190,9 +190,9 @@ export default function BehandelingAngststoornis() {
         {/* Waarom overwegen */}
         <section className="py-20 bg-white border-b border-slate-100">
           <div className="max-w-3xl mx-auto px-6">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">Waarom mensen rTMS overwegen</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Waarom mensen rTMS overwegen bij angst</h2>
             <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
-            <p className="text-slate-600 mb-6">Deze behandeling is voor je wanneer je:</p>
+            <p className="text-slate-600 mb-6">Deze behandeling is voor jou wanneer je:</p>
             <ul className="space-y-4">
               {[
                 'al langere tijd last hebt van angst en merkt dat therapie of medicatie onvoldoende helpt',

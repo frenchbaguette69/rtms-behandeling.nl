@@ -125,7 +125,7 @@ export default function Homepage() {
           
           <div className="relative z-20 max-w-7xl mx-auto px-6 w-full mt-10">
             <h1 className="text-4xl md:text-6xl lg:text-[4.5rem] font-bold text-white leading-[1.1] tracking-tight mb-8 max-w-4xl drop-shadow-md">
-              rTMS Behandeling<br className="hidden md:block" />
+              rTMS Behandeling<br className="hidden md:block" />{' '}
               Effectieve hulp bij depressie en angststoornissen
             </h1>
             
@@ -191,7 +191,7 @@ export default function Homepage() {
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-3">Vergoed</h3>
-              <p className="text-slate-600 text-[15px] leading-relaxed">Onze behandelingen worden in veel gevallen volledig vergoed door uw Nederlandse zorgverzekeraar.</p>
+              <p className="text-slate-600 text-[15px] leading-relaxed">Onze behandelingen worden in veel gevallen volledig vergoed door jouw Nederlandse zorgverzekeraar.</p>
             </div>
           </div>
         </section>
@@ -206,7 +206,7 @@ export default function Homepage() {
                 rTMS staat voor Repetitieve Transcraniële Magnetische Stimulatie. Het is een geavanceerde, bewezen techniek waarbij specifieke hersengebieden (die betrokken zijn bij stemming) gericht worden gestimuleerd door middel van magnetische pulsen.
               </p>
               <p className="text-lg text-slate-600 mb-10 leading-relaxed">
-                Deze theapie herstelt de natuurlijke balans in uw brein, wat leidt tot een aanzienlijke vermindering van depressieve en angstige klachten. Het is een volwaardig alternatief voor medicatie.
+                Deze theapie herstelt de natuurlijke balans in je brein, wat leidt tot een aanzienlijke vermindering van depressieve en angstige klachten. Het is een volwaardig alternatief voor medicatie.
               </p>
               
               <Link href="/wat-is-rtms/" className="flex items-center gap-3 group group-hover:text-[#33C5F3] transition-colors w-max">
@@ -273,7 +273,7 @@ export default function Homepage() {
               <div>
                 <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 tracking-tight">Hoe werkt de rTMS behandeling?</h2>
                 <div className="w-20 h-1 bg-[#33C5F3] mb-8"></div>
-                <p className="text-lg text-slate-600 leading-relaxed">Elke sessie duurt gemiddeld 20 tot 45 minuten. U zit comfortabel in een stoel terwijl de spoel op de juiste positie wordt geplaatst. Na de behandeling kunt u direct naar huis — autorijden is toegestaan.</p>
+                <p className="text-lg text-slate-600 leading-relaxed">Elke sessie duurt gemiddeld 20 tot 45 minuten. U zit comfortabel in een stoel terwijl de spoel op de juiste positie wordt geplaatst. Na de behandeling kunt u direct naar huis. Autorijden is toegestaan.</p>
               </div>
               <div className="relative h-72 rounded-lg overflow-hidden shadow-md">
                 <Image

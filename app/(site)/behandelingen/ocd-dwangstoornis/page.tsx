@@ -186,9 +186,9 @@ export default function BehandelingOcd() {
         {/* Waarom overwegen */}
         <section className="py-20 bg-white border-b border-slate-100">
           <div className="max-w-3xl mx-auto px-6">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">Waarom mensen rTMS overwegen</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">Waarom mensen rTMS overwegen bij OCD</h2>
             <div className="w-16 h-1 bg-[#33C5F3] mb-8"></div>
-            <p className="text-slate-600 mb-6">Deze behandeling is voor je wanneer je:</p>
+            <p className="text-slate-600 mb-6">Deze behandeling is voor jou wanneer je:</p>
             <ul className="space-y-4">
               {[
                 'merkt dat dwanggedachten of -handelingen je dagelijks leven bepalen',
